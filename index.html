@@ -7,24 +7,48 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="pictures/icon5.png">
+        <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width" initial-sacle="1.0">
+        <title>Valerie Lui</title>
     </head>
 
     <body>
-<nav class="navbar">
-        <a href="index.html" class="nav-left">VALERIE LUI</a>
+        <nav class="navbar">
+            <a href="index.html" class="nav-left">valerie lui</a>
+
+            <ul class="nav-right">
+                <li><a id="navlinkwork" href="index.html">work</a></li>
+                <li><a id="navlinkabout" href="about.html">about</a></li>
+                <div id="nav-icons">
+                    <li><a href="mailto:valerielokyunglui@gmail.com"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="https://linkedin.com/in/valerie-lui"><i class="fab fa-linkedin-in"></i></a></li>
+                </div>
+
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
         
-        <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-                            
-        <div class="nav-right">
-            <a id="navlinkwork" href="index.html">WORK</a>
-           <a id="navlinkabout" href="about.html">ABOUT</a>
-            <a id="navlinkcontact" href="contact.html">CONTACT</a>
-        </div>    
-            
-            </nav>
-      
+        <script src="app.js"></script>
+
+<!--
+        <div class="home-text">
+            <h1>Welcome! I'm Valerie.</h1>
+            <h3>A hands-on creative passionate about creating tangible solutions and impact.</h3>
+        </div>
+-->
+        
+        
+        
 <!--ROW 1-->
 <div class="row">
   <div class="c2">
@@ -36,7 +60,7 @@
   
   <div class="c3">
           <a href="ahs-dance-poster.html">
-            <img  id="proj" src="pictures/poster.jpg">
+            <img id="proj" src="pictures/poster.jpg">
    <div class="overlay">
    <div id="otext">Alameda High School Dance Concert</div></div>
    </a></div>
@@ -62,10 +86,10 @@
       
   <footer>
     <div class="ficons-row">
-      <div class="icon"><a href="mailto:valerielokyunglui@gmail.com"><img id="emailicon" class="footericon" src="pictures/mail.png"></a></div>
+      <div class="icon"><a href="mailto:valerielokyunglui@gmail.com"><i class="far fa-envelope" id="emailicon" class="footericon"></i></a></div>
       
       <div class="icon">
-      <a href="https://www.linkedin.com/in/valerie-lui" target="_blank"><img id="linkedinicon" class="footericon" src="pictures/linkedinlogo.png"></a>
+      <a href="https://www.linkedin.com/in/valerie-lui" target="_blank"><i class="fab fa-linkedin-in" id="linkedinicon" class="footericon"></i></a>
       </div>
     </div>
     <div class="copyright">© Valerie Lui 2021</div>
