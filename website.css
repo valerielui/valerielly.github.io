@@ -140,7 +140,6 @@ body {
     top: 50%;
     left: 50%;
     font-size: 23px;
-    line-height: 30px;
     transform: translate(-50%,-50%);
     text-align: center;
 }
@@ -361,7 +360,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     color: rgb(77,77,77);
-    line-height: 30px;
 }
 .project-page p {
     font-size: 20px;
@@ -551,6 +549,7 @@ body {
     .project-topic {
         font-size: 30px;
         margin-bottom: 10px;
+        line-height: 30px;
     }
     .project-page p {
         font-size: 18px;
