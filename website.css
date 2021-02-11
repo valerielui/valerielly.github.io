@@ -1,0 +1,609 @@
+<!doctype css>
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+    width: 100%;
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-left {
+    margin-left: 8%;
+    text-decoration: none;
+    color: rgb(77,77,77);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-right {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 8%;
+}
+.nav-right a {
+    text-decoration: none;
+    color: rgb(77,77,77);
+    font-size: 18px;
+    font-weight: 400;
+}
+.navbar li {
+    list-style: none;
+}
+#navlinkwork {
+    margin-right: 50px;
+}
+.nav-right a:hover {
+    border-bottom: solid 1px rgb(77,77,77);
+/*    padding-bottom: 5px;*/
+}
+.nav-right a:active {
+    border-bottom: solid 1px rgb(77,77,77);
+/*    padding-bottom: 5px;*/
+}
+.burger {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 2%;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(77,77,77);
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+#nav-icons i {
+    font-size: 40px;
+    display: none;
+    margin-top: 35px;
+    padding-bottom: 10px;
+}
+#nav-icons i:hover {
+    border-bottom: solid 2px rgb(77,77,77);
+}
+
+/*HOME TEXT*/
+.home-text {
+    margin-left: 40%;
+    margin-right: 20%;
+/*    text-align: center;*/
+    font-family: 'Poppins';
+    padding-top: 80px;
+    padding-bottom: 80px;
+/*    background-color: beige;*/
+    color: rgb(77,77,77);
+}
+.home-text h1 {
+    font-size: 40px;
+}
+.home-text h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+/* ROWS */
+body {
+    overflow-x: hidden;
+}
+.row {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+  padding-top: 20px;
+}
+.c2 {
+  background-color: rgb(230,230,230);
+  height: 400px;
+  width: 44%;
+  margin-right: 2%;
+  margin-bottom: 0%;
+  position: relative;
+}
+#proj {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    transition: 0.2s ease;
+    opacity: 0;
+    background-color: #D8C4C2;
+    height: 400px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#otext {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 23px;
+    line-height: 30px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.c2:hover .overlay {
+    opacity: 1;
+}
+.c3 {
+    background-color: rgb(230,230,230);
+    height: 400px;
+    width: 44%;
+    margin-bottom: 0%;
+    position: relative;
+}
+.c3:hover .overlay {
+    opacity: 1;
+}
+.row2 {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+/*ABOUT PAGE*/
+.a-container1 {
+    margin-top: 50px;
+}
+#mypic {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+#abouttitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(77,77,77);
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.a-container2 {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+}
+#aboutsubtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(77,77,77);
+    text-align: center;
+    margin-top: 10px;
+}
+#aboutsubtitle a {
+    text-decoration: none;
+    color: rgb(77,77,77);
+}
+.line {
+    margin-top: 50px;
+    height: 1px;
+    background-color: rgb(77,77,77);
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.a-container3 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.a-container3 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: rgb(77,77,77);
+    margin: 0px;
+    padding: 0px;
+}
+.a-container3 h5, p {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(77,77,77);
+}
+.expcontainer h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.skillscontainer h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.a-container3 p {
+    font-size: 18px;
+    font-weight: 300;
+}
+.a-container3 a {
+    text-decoration: none;
+    color: indianred;
+}
+.expcontainer br {
+    height: 50px;
+}
+.expcontainer {
+    width: 49.5%;
+    margin-right: 1%;
+}
+.skillscontainer {
+    width: 49.5%;
+}
+#usc {
+    font-weight: 600;
+}
+#uscsubtitle {
+    font-weight: 300;
+}
+.atext {
+    line-height: 25px;
+}
+.atext h4 {
+    line-height: 20px;
+}
+
+/* FOOTER */
+.ficons-row {
+    margin-left: auto;
+    margin-right: auto;
+/*    height: 30px;*/
+    margin-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+/*    flex-direction: row;*/
+}
+.ficons-row i {
+    color: rgb(77,77,77);
+    font-size: 35px;
+}
+#linkedinicon {
+    margin-left: 40px;
+    clear: left;
+}
+.copyright {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(77,77,77);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*CONTACT PAGE*/
+.formblock {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+#contacttitle {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: indianred;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 50px;
+}
+.form input {
+  padding: 5px;
+}
+.form textarea {
+  padding: 5px;
+}
+#emailinput {
+  width: 30%;
+/*  font-family: monospace;*/
+  margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+        font-family: 'Nunito', sans-serif;
+}
+#subject {
+   width: 30%;
+   margin-top: 1%;
+    margin-bottom: 5px;
+    font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+
+/*  font-family: monospace;*/
+}
+#msg {
+  margin-top: 1%;
+  width: 30%;
+/*  font-family: monospace;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+#submitbutton {
+/*  font-family: monospace;*/
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0.5%;
+    margin-bottom: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+/*PROJECT PAGES*/
+.project-page {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.project-topic {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: rgb(77,77,77);
+    line-height: 30px;
+}
+.project-page p {
+    font-size: 20px;
+}
+.project-page a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: indianred;
+}
+.project-page img {
+    width: 100%;
+/*    margin-top: 30px;*/
+}
+.projlinks {
+    text-align: center;
+}
+.projlinks p {
+    font-size: 25px;
+    font-weight: 500;
+}
+.slash {
+    font-size: 25px;
+}
+.thermostat-page {
+    margin-top: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#final-design {
+    width: 55%;
+}
+.column {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+.column img {
+    height: 49%;
+}
+#thermostat1 {
+    margin-bottom: 4%;
+}
+.thermostat-div2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#button {
+    width: 39%;
+    margin-right: 2%;
+}
+#wiring {
+    width: 59%;
+}
+
+/*mobile optimization*/
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .nav-left {
+        margin-left: 3%;
+    }
+    .nav-right {
+        margin-right: 0;
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-content: flex-start;
+        padding-top: 25px;
+        z-index: 1;
+    }
+    .nav-right li{
+        padding-bottom: 10px;
+        margin-left: 50px;
+    }
+    .nav-right a {
+        color: rgb(77,77,77);
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .nav-right a:hover {
+        border-bottom-color: rgb(77,77,77);
+        border-bottom-width: 3px;
+    }
+    .burger {
+        display: block;
+    }
+    #nav-icons {
+        display: flex;
+    }
+    #nav-icons i {
+        display: block;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .row2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .c2 {
+        width: 96%;
+        padding: none;
+        margin-bottom: 2%;
+    }
+    .c3 {
+        width: 96%;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    .a-container1 {
+        margin-top: 0px;
+    }
+    #mypic {
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+        width: 65%;
+    }
+    .a-container2 {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #abouttitle {
+        padding: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #aboutsubtitle {
+        font-size: 18px;
+        padding: 0 0 0 0;
+    }
+    .a-container3 {
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+    #contacttitle {
+        font-size: 35px;
+        padding-top: 95px;
+    }
+    #emailinput {
+        width: 70%;
+    }
+    #subject {
+        width: 70%;
+    }
+    #msg {
+        width: 70%;
+    }
+    .expcontainer {
+        width: 100%
+    }
+    .skillscontainer {
+        margin-top: 35px;
+        width: 100%;
+    }
+    .project-page {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%
+    }
+    .project-topic {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .project-page p {
+        font-size: 18px;
+    }
+    .project-page a {
+        font-size: 18px;
+    }
+    .thermostat-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .thermostat-page img {
+        width: 100%;
+    }
+    #final-design {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+    }
+    #button {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    #wiring {
+        width: 100%;
+    }
+    .ficons-row {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+
+
+
+
+
