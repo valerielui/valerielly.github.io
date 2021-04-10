@@ -3,27 +3,26 @@
     <head>
         <link rel="stylesheet" type="text/css" href="website.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="icon" href="pictures/icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+        <link rel="icon" href="pictures/icon/spakospako.png">
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width" initial-sacle="1.0">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>Valerie Lui</title>
+        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC">
+        <meta name="description" content="Valerie Lui is a interdisciplinary, ever-curious creative currently studying Business + Design student at USC.">
     </head>
-
+    
     <body>
         <nav class="navbar">
-            <a href="index.html" class="nav-left">valerie lui</a>
+            <a href="/" class="nav-left">valerie lui</a>
 
             <ul class="nav-right">
-                <li><a id="navlinkwork" href="index.html">work</a></li>
-                <li><a id="navlinkabout" href="about.html">about</a></li>
+                <li><a id="navlinkwork" href="/work">work</a></li>
+                <li><a id="navlinkwork" href="/fun">fun</a></li>
+                <li><a id="navlinkabout" href="/about">about</a></li>
                 <div id="nav-icons">
                     <li><a href="mailto:vlui@usc.edu"><i class="far fa-envelope"></i></a></li>
                     <li><a href="https://linkedin.com/in/valerie-lui"><i class="fab fa-linkedin-in"></i></a></li>
@@ -39,78 +38,124 @@
         </nav>
         
         <script src="app.js"></script>
-
-<!--
-        <div class="home-text">
-            <h1>Welcome! I'm Valerie.</h1>
-            <h3>A hands-on creative passionate about creating tangible solutions and impact.</h3>
+        
+        <section class="homepage">
+            <div class="hero">
+            <img src="pictures/ribbons/ribbon1.png">
+            <div class="hero-content">
+                <h1 class="home-title">Hi, I'm Valerie!</h1>
+                <h3 class="home-sub">A creative, curious human, matcha latte enthusiast, and aspiring marketing consultant. Currently studying Business + Design at USC. Check out my featured works below! <b>⤵</b></h3>
+            </div>
         </div>
--->
         
-<!--ROW 0-->
-<div class="row">
-  <div class="c2">
-          <a href="ox-stickers.html">
-            <img id="proj" src="pictures/cow-cover.png">
-   <div class="overlay">
-   <div id="otext">Year of the Ox Stickers</div></div>
-   </a></div>
-  
-  <div class="c3">
-          <a href="#">
-            <img id="proj" src="pictures/tfhk2.jpg">
-<!--            <img id="proj" src="pictures/tfhk2.jpg">-->
-   <div class="overlay">
-   <div id="otext">Teach For Hong Kong Website Revamp</div></div>
-   </a></div>
-  
-</div>     
+        <div class="featured-cont">
+            <div class="row">
+                
+                <a href="/tfhk" id="trial" class="work">
+                <div class="featured-flex">
+                    <div class="f-column1">
+                        <p class="featured-num">01</p>
+                    </div>
+                    <div class="f-column2">
+                        <div class="work-img">
+                            <img src="pictures/tfhk/logo.png" alt="teach for hong kong logo">
+                        </div>
+                    
+                        <div class="featured-text">
+                            <p class="work-category">Web Design, Graphic Design, Internship</p>
+                            <h1 class="work-title">Teach For Hong Kong Internship</h1>
+                            <h3 class="work-subtitle">A reflection on my internship at Teach For Hong Kong.</h3>
+                        </div>
+                    </div>
+                </div></a>
+                
+                <a href="/ox-stickers" class="work">
+                <div class="featured-flex" id="featured-p2">
+                    <div class="f-column1">
+                        <p class="featured-num">02</p>
+                    </div>
+                    <div class="f-column2">
+                        <div class="work-img">
+                            <img src="pictures/ox/cover.png" alt="year of the ox sticker pack cover">
+                        </div>
+                    
+                        <div class="featured-text">
+                            <p class="work-category">Graphic Design</p>
+                            <h1 class="work-title">Year of the Ox Stickers</h1>
+                            <h3 class="work-subtitle">Festive Whatsapp stickers to celebrate the Year of the Ox.</h3>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+            
+            <div class="row">
+                <a href="/survey-form" class="work">
+                <div class="featured-flex">
+                    <div class="f-column1">
+                        <p class="featured-num">03</p>
+                    </div>
+                    <div class="f-column2">
+                        <div class="work-img">
+                            <img src="pictures/survey/cover.png" alt="cover pic of quarantine survey form">
+                        </div>
+                    
+                        <div class="featured-text">
+                            <p class="work-category">Web Development</p>
+                            <h1 class="work-title">Quarantine Cravings Survey Form</h1>
+                            <h3 class="work-subtitle">A survey form created over quarantine asking about cravings for food and eating out. </h3>
+                        </div>
+                    </div> 
+                </div></a>
+            
+                <a href="/dt-thermostat" class="work">
+                <div class="featured-flex" id="featured-p2">
+                    <div class="f-column1">
+                        <p class="featured-num">04</p>
+                    </div>
+                    <div class="f-column2">
+                        <div class="work-img">
+                            <img src="pictures/thermostat/tinkercad1.JPG">
+                        </div>
+                    
+                        <div class="featured-text">
+                            <p class="work-category">Product Design, 3D Printing</p>
+                            <h1 class="work-title">Design Technology Thermostat Project</h1>
+                            <h3 class="work-subtitle"><i>**Under construction sorry!!**</i>
+                            <br>Read about my first exposure to a thermostat and first experiences in coding, soldering, and 3D printing.</h3>
+                        </div>
+                    </div>
+                    </div></a>
+            </div>
+
+            </div>
+        </section>
         
-<!--ROW 1-->
-<div class="row">
-  <div class="c2">
-          <a href="ahs-dance-poster.html">
-            <img id="proj" src="pictures/poster.jpg">
-   <div class="overlay">
-   <div id="otext">Alameda High School Dance Concert Poster</div></div>
-   </a></div>
-  
-  <div class="c3">
-  <a href="move.html"><img id="proj"  src="pictures/moveinfographic.jpg">
-  <div class="overlay">
-   <div id="otext">USC MOVE Everytable Infographic</div></div>
-   </a>
-      </div>
-  
-</div>     
-      
-<!--ROW 2-->
-<div class="row2">
-  <div class="c2">
-  <a href="dt-thermostat.html"><img id="proj" src="pictures/thermostat.jpg">
-  <div class="overlay">
-   <div id="otext">Design Technology Thermostat Project</div></div>
-   </a>
-  </div>
-<!--
-  <div class="c3">
-  <a href="dt-thermostat.html"><img id="proj" src="pictures/thermostat.jpg">
-  <div class="overlay">
-   <div id="otext">Design Technology Thermostat Project</div></div>
-   </a>
-  </div>
--->
-</div>
+        
     </body>
-      
-  <footer>
-    <div class="ficons-row">
-      <div class="icon"><a href="mailto:vlui@usc.edu"><i class="far fa-envelope" id="emailicon" class="footericon"></i></a></div>
-      
-      <div class="icon">
-      <a href="https://www.linkedin.com/in/valerie-lui" target="_blank"><i class="fab fa-linkedin-in" id="linkedinicon" class="footericon"></i></a>
-      </div>
-    </div>
-    <div class="copyright">© Valerie Lui 2021</div>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-icons">
+                    <div class="footer-git">
+                        <h1>Let's get in touch</h1>
+                    </div>
+                    
+                    <div class="icons">
+                        <a href="mailto:vlui@usc.edu">
+                        <i class="far fa-envelope" id="emailicon" class="footericon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/valerie-lui" target="_blank">
+                        <i class="fab fa-linkedin-in" id="linkedinicon" class="footericon"></i>
+                    </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+        <div class="space"></div>
+
     </footer>
 </html>
