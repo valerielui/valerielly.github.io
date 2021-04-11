@@ -305,7 +305,6 @@ img {
     margin: 0 10% 0 10%;
     display: flex;
     margin-top: 45px;
-/*    background-color: blue;*/
 }
 .c-pic {
     width: 40%;
@@ -324,16 +323,13 @@ img {
 .c-row-text {
     margin-left: 5%;
     width: 40%;
-/*    background-color: gray;*/
 }
 .c-row-text a {
     font-family: 'Poppins', sans-serif;
-/*    color: rgb(77,77,77);*/
     color: #808080;
     font-weight: 600;
 }
 .c-row-text a:hover {
-/*    color: #808080;*/
     color: rgb(77,77,77);
 }
 .c-space {
@@ -479,8 +475,6 @@ li {
 }
 .ol-row:first-child {
     margin-top: 0px;
-}
-#finalp {
 }
 #finalp .ppage-img {
     width: 100%;
