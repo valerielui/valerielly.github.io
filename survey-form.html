@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="website.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="https://use.typekit.net/zdy2eiu.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -28,20 +29,20 @@
         <meta property="og:description" content="A survey form created over quarantine asking about cravings for food and eating out.">
         <meta property="og:type" content="website">
         <meta property="og:image" content="pictures/preview/cover2.png">
-        <meta property="og:url" content="https://valerielui.github.io/survey-form">
+        <meta property="og:url" content="https://valerielui.com/survey-form">
+        <meta name="robots" content="noindex">
     </head>
     
     <body>
         <nav class="navbar">
             <a href="/" class="nav-left">valerie lui</a>
 
-            <ul class="nav-right">
-                <li><a id="navlinkwork" href="/work">work</a></li>
-                <li><a id="navlinkwork" href="/fun">fun</a></li>
-                <li><a id="navlinkabout" href="/about">about</a></li>
+            <ul class="nav-right" id="nav-right">
+                <li><a class ="navlink" id="navlinkwork" href="/work">work</a></li>
+                <li><a class ="navlink" id="navlinkabout" href="/about">about</a></li>
                 <div id="nav-icons">
-                    <li><a href="mailto:vlui@usc.edu"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://linkedin.com/in/valerie-lui"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="mailto:vlui@usc.edu"><i class="far fa-envelope navlink"></i></a></li>
+                    <li><a href="https://linkedin.com/in/valerie-lui"><i class="fab fa-linkedin-in navlink"></i></a></li>
                 </div>
 
             </ul>
@@ -57,7 +58,7 @@
         
         <section class="projectpage">
             <div class="project-hero">
-            <img src="pictures/ribbons/ribbon2.png">
+            <img src="pictures/ribbons/workrib.png">
             <div class="p-hero-content">
                 <h1 class="home-title">Quarantine Survey Form</h1>
             </div>
@@ -103,40 +104,41 @@
             
         </div>
         
-        <div class="prevnnext">
-            <h1><a href="/ox-stickers">← previous project</a></h1>
-<!--            <h1><a href="#">next project →</a></h1>-->
+        <div class="pnbar">
+            <div class="prevnnext">
+                <a href="/3d4e-plant-pot">
+                        <div class="pnbtn prev">
+                            <div class="arrow">←</div>
+                            <div class="text"><p class="work-category">previous project</p><h1>Year of the Ox Stickers</h1></div>
+                        </div>
+                    </a>
+                <a href="/survey-form">
+                        <div class="pnbtn next">
+                            <div class="text"><p class="work-category">next project</p><h1>DT Thermostat</h1></div>
+                            <div class="arrow">→</div>
+                        </div>
+                    </a>
+            </div>
+            <div class="project-space"></div>
+            <div class="project-space"></div>
         </div>
-        <div class="project-space"></div>
-        <div class="project-space"></div>
 
         </section>
         
-    </body>
-    
-    <footer>
-        <div class="footer">
+        <footer class="footer">
             <div class="footer-content">
                 <div class="footer-icons">
-                    <div class="footer-git">
-                        <h1>Let's get in touch</h1>
-                    </div>
+                        <h1 class="home-title">Let's connect!</h1>
                     
-                    <div class="icons">
-                        <a href="mailto:vlui@usc.edu">
-                        <i class="far fa-envelope" id="emailicon" class="footericon"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/valerie-lui" target="_blank">
-                        <i class="fab fa-linkedin-in" id="linkedinicon" class="footericon"></i>
-                    </a>
-                    </div>
+                        <div class="icons">
+                            <p><a href="mailto:vlui@usc.edu">Email</a></p>
+                            <p>/</p> 
+                            <p><a href="https://www.linkedin.com/in/valerie-lui/" target="_blank">LinkedIn</a></p>
+                        </div>
                 </div>
-                
+                    
+                <div class="developed"><p>Designed + developed by Valerie Lui ☻</p></div>
             </div>
-            
-
-        </div>
-        <div class="space"></div>
-
-    </footer>
+        </footer>
+    </body>
 </html>
