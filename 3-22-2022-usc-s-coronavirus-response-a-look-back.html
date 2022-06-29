@@ -1,0 +1,295 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>USC’s coronavirus response: A look back | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+                <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                        <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>USC’s coronavirus response: A look back</h1>
+                    <h5>by cj haddad <span>3/22/22</span></h5>
+                    <img src="http://dailytrojan.com/wp-content/uploads/2022/03/IMG_6751-scaled.jpeg" style="width: 100%;">
+                    <figcaption><em>The University responded to the initial surge in coronavirus cases by moving classes online for a three-day period beginning March 11, 2020, to test remote capabilities. (Beth Mosch | Daily Trojan file photo)</em></figcaption>
+                    <p>In the midst of the 2020 coronavirus lockdown’s second anniversary, USC has chronicled a long history of responses to the outbreak, including decisions about online classes, Trojan Check, tuition increases and treatment of international students.</p>
+                    <p>One of the University’s first measures responded to the initial surge in coronavirus cases by moving classes online for a three-day testing period beginning March 11, 2020, to test remote capabilities. The University later extended the online period, with classes and campus life not fully returning to an in-person capacity until Fall 2021. </p>
+                    <p>Early in July 2020, new implications arose for international students and their ability to remain in the United States following the release of a federal government directive that required international students to take at least one in-person class to maintain their visa status, long before most in-person classes had returned across the nation’s colleges. Immediately meeting public and institutional controversy, USC responded by filing a lawsuit, alongside 20 other universities in the country, against the policy.</p>
+                    <p>Grace Zhang, a junior majoring in electrical engineering and computational neuroscience from China, said  the news about the policy had initially panicked her until hearing from the Viterbi School of Engineering about plans for hybrid courses to comply with the visa requirement.</p>
+                    <p>“Particularly, I remember the [government] policy coming out and me having a heart attack about it,” Zhang said. “But I remember our school of engineering reaching out to us and saying that it’s not going to be a problem for undergrads.”</p>
+                    <p>In a schoolwide email on July 8, 2020, Viterbi Dean Yannis Yortsos stated that 40% of the school’s Fall 2020 classes would be offered in a hybrid fashion to help F-1 and M-1 visa holders.</p>
+                    <p>A majority of classes continued online during the 2020-21 school year — other than labs and performance courses that had a hands-on curriculum. For some students living and quarantining far away from California, including Mandy Han, a senior majoring in design, the changes that online schooling brought to hands-on courses changed their academic plans.</p>
+                    <p>“Before I got into design, I was an art major, so I painted a lot, and ever since COVID happened, I stopped taking a bunch of studio courses,” Han said. “Because I had to take Zoom [classes], I took a lot of design classes at Roski … and as I shifted to taking design classes, that’s how I found my new interest.”</p>
+                    <p>For Zhang, enrolling in a local in-person engineering program in her home country led her to see the importance of lab research for her career. </p>
+                    <p>“I eventually decided that I’m probably not going to go into industry in the future and probably going to go get a PhD because I like that [research] experience,” Zhang said.</p>
+                    <p>Moving into Spring 2021, while most classes were still online, the University increased in-person campus access through study canopies, libraries, outdoor recreation areas and swimming pools. People could enter campus by using the Trojan Check app, the campus symptom tracker that produces a daily QR code that staff at campus access points scan upon entry – now another step in students’ regular routines.</p>
+                    <p>Trojan Check has been met with mixed responses from the USC community since its inception last Spring. Erin Coulon, a freshman majoring in biomedical engineering, said that while showing a QR code is more convenient than continually showing a vaccination record to access campus, the website itself could be improved.</p>
+                    <p>“The technology we’re using is a little bit bulky … It’s not as efficient as it could be.” Coulon said. “I like having a QR code we just quickly show [at the gate]. I guess we could just optimize it a little bit more.”</p>
+                    <p>At the end of Spring 2021, the University held an in-person commencement ceremony for both the Classes of 2020 and 2021, followed by the return of in-person classes in Fall 2021, including a weekly coronavirus testing requirement for students through nasal and saliva testing at three different campus locations.</p>
+                    <p>This requirement became regular practice for campus entrants until USC’s newest coronavirus update, sent in a campuswide email on March 4. Based on Los Angeles County’s revised health orders and decreasing coronavirus cases, the University eliminated its indoor masking mandate and weekly testing requirement for vaccinated students and faculty March 7.</p>
+                    <p>The email described a turning point for the Trojan community over the last two years of coronavirus restrictions and noted the anxieties individuals may have over looser restrictions on masking.</p>
+                    <p>“We deeply appreciate all the acts of community support that you have shown, and the consideration you have given for all who have labored these long two years to keep our campuses safe,” the email read. “You have our deeply felt gratitude for continuing to show kindness toward one another as we begin this transition.”</p>
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

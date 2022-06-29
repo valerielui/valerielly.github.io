@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trojan Check bypassed | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+        <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #content {
+                width: 85%;
+                margin-left: 14%;
+                height: calc(100vh-46px);
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            a {
+                color: #952836;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                        <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>Trojan Check bypassed</h1>
+                    <h5>by jenna peterson <span>9/10/21</span></h5>
+                    <img src="https://dailytrojan.com/wp-content/uploads/2021/09/trojancheck_090921_eriche_e-1-scaled.jpg" style="width: 100%; ">
+                    <figcaption><em>Falsifying Trojan Checks has included borrowing other students’ passes and signing in as guests. (Eric Yeich | Daily Trojan)</em></figcaption>
+                    <p>Every morning at campus intersections, like McClintock and Jefferson, students bustle across the street with their heads down, rapidly typing their myUSC credentials on their phone or pulling up a screenshot to display the uniquely colored QR code to USC Care Crew workers. Since returning to campus, students have been required to complete Trojan Check, the daily coronavirus compliance survey, to enter campus.</p>
+                    <p>Starting with the header of the survey, “Do you currently have any of the following symptoms,” students answer yes or no to a series of symptoms, such as a fever of 100 degrees or higher and loss of taste or smell. Students and on-site employees are also required to comply with a weekly coronavirus test — twice weekly for unvaccinated individuals with medical or religious vaccination exemptions —  and to complete the health and safety course, “Hygiene, Health and Safety,” on TrojanLearn.</p>
+                    <p>But some USC students have found ways to get around the University’s Trojan Check system.</p>
+                    <p>When opening the Trojan Check app, users are presented with two options: log in with their USC NetID or fill out a guest pass, the latter which does not require a completed coronavirus test, either of the courses, or a full vaccination dosage. While guest passes are intended for non-USC visitors, some students have used the pass when non-compliant with Trojan Check and have gained access to campus.</p>
+                    <p>A student who wished to remain anonymous out of fear of disciplinary action said he found difficulty arranging time to get a coronavirus test because of long queues.</p>
+                    <p>“I used the guest pass method,” he said. “I know a lot of people use it that way because they have interviews and things like that and waiting in line for like two or three hours is a huge commitment.”</p>
+                    <p>The senior said he and his peers have not received any disciplinary action for showing a guest pass.</p>
+                    <p>“[Staff have] asked them ‘May I ask why you are using a guest pass?’ And that’s it,” the student said. “I’ve had a friend just say ‘because I’m visiting’… It’s not really a great system.”</p>
+                    <p>In light of the student workarounds of campus coronavirus guidelines, the University looks to increase Trojan Check enforcement at campus entrance stations but are concerned about creating holdups, Chief Health Officer Dr. Sarah Van Orman said during a media briefing Sept. 2. </p>
+                    <p>“It’s always a balance with the Trojan Check. The people at the gates don’t want to create long lines and backups,” Van Orman said. “They want to try to trust people so we can have a better experience, but we also know it’s important that it’s enforced.”</p>
+                    <p>A sophomore majoring in law, history and culture, who wished to remain anonymous because of concerns of disciplinary action for disregarding coronavirus protocols, used another student’s pass to get onto campus the week before classes began. When trying to complete Trojan Check at the crosswalk before the entrance, she found out she was unable to get a pass.</p>
+                    <p>“I didn’t know you needed the [health and safety module] requirement,” they said. “I asked [another student that was crossing] if I could just use a screenshot of theirs because [the staff] weren’t scanning. They were just kind of looking at the color.”</p>
+                    <p>Her plan worked and she got onto campus. However, the sophomore said USC could take further measures to prevent students from entering campus without a valid pass, such as  looking at students’ Trojan Check before they enter classrooms. According to school updates acquired by the Daily Trojan, the Gould School of Law and Herman Ostrow School of Dentistry implemented policies to screen each student as they enter the building, but the majority of schools rely on accurate screenings at the campus entrances.</p>
+                    <p>“I think [checking at classroom doors] would be easier to see whether or not the students in the class actually have a real Trojan Check, than to just check at the entrance where you could swim around everyone to not scan or just use somebody else’s [pass], or the guest pass,” the student said.</p>
+                    <p>The first student said USC should focus on shortening testing lines by adding additional times during the weekend, so students are less likely to put off testing because of a lack of time.</p>
+                    <p>“You have class, you have recruiting season, you have a bunch of things going on in the students’ lives and having [the majority of testing] during the week during shop hours is really inconvenient,” he said. “I know a lot of people who just have been skipping their weekly test just to avoid that clash.”</p>
+                    <p>Students with fraudulent Trojan Checks are in violation of the student conduct code regarding coronavirus public health measures and are subject to disciplinary action, Van Orman said.</p>
+                    <p>“I’d like to think that we don’t have to enforce this with any students — that if you’re a Trojan, and you are a part of our community — you understand why we’re doing this,” Van Orman said during another media briefing Thursday. “It’s really not about finding ways to subvert the system, it’s finding ways to understand why those systems are in place.”</p>
+                    <p><em>Correction: A previous version of this article credited the photo to Eric He. The photo was taken by Eric Yeich. The Daily Trojan regrets this error.</em></p>
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

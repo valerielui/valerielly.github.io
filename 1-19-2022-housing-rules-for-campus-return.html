@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Housing rules for campus return | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+                <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            a {
+                color: #952836;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                        <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>Housing rules for campus return</h1>
+                    <h5>by jenna peterson <span>1/19/22</span></h5>
+                    <img src="https://dailytrojan.com/wp-content/uploads/2022/01/housing.jpeg" style="width: 100%;">
+                    <p>The spring semester’s return to in-person learning has brought forth more changes in students’ return to campus than in previous years. Whether students arrived when USC Housing reopened on Jan. 6, are yet to arrive or fall somewhere in between, here are a list of rules and policies in place for students living in University housing this semester.</p>
+                    <h3>No-guest policy</h3>
+                    <p>In a Dec. 29 email to USC Housing residents, the University announced that it would be returning to the no-guest policy that was in place at the beginning of the fall semester.</p>
+                    <p>“We know that starting the year without guests can be difficult, but the current policy, in combination with our other mitigation practices, helps provide a safe residential environment for residents to thrive,” said Grant Burlew, senior director of the Office for Residential Education, in a statement to the Daily Trojan.</p>
+                    <p>USC lifted the policy for the Fall on Oct. 18 because of low coronavirus cases on campus. The week of the reversal, the positivity rate among students was 0.12%. The most recent data indicates a positivity rate of 14.79% among students.</p>
+                    
+                    <h3>Trojan Check</h3>
+                    <p>Like last semester, USC Housing residents are required to show a valid Trojan Check pass when entering and exiting their building. The criteria for passing Trojan Check are similar to those from Fall 2021: full vaccination including an influenza shot, a weekly negative test and the completion of a health, hygiene and safety learning module. However, full vaccination now includes a booster shot, proof of which must be uploaded to the MySHR portal by Jan. 31, to ensure campus access.</p>
+                    <p>The University sent an email to students misusing the Trojan Check application on Jan. 13. Misuse includes sharing a campus access pass with another student, using a pass that another student shared or using a guest pass instead of a student pass.</p>
+                    <p>In a statement to the Daily Trojan, USC Student Affairs said the University will report students who misuse the system to Student Judicial Affairs and Community Standards. After two reports, a student will receive a warning letter from SJACS, with escalating punishments up until five reports, at which SJACS will begin the student conduct process.</p>
+                    <p>“Students likely do not understand they are creating risk by letting their friends ‘borrow’ their Trojan Check, or by using the guest access to get into campus when their own Trojan Check is not in compliance,” USC Student Affairs wrote. “We focus on education and making students aware that the tool is designed to track compliance and keep the community safe, and that by allowing people who may not be compliant into campus, they are exposing the community to a greater risk for COVID-19 transmission.”</p>
+                    
+                    <h3>Testing</h3>
+                    <p>All students are required to show a negative coronavirus test result upon their return to University housing. USC Student Health recommends that students test 48 hours before leaving their winter break location to return to campus. Lab PCR tests and at-home tests are acceptable. For students who tested positive in the last 90 days, USC Housing will also accept a positive result from that time period. Students should upload their test result to mySHR and email it to their respective Customer Service Center.</p>
+                    <p>USC Housing has also begun notifying residents via email when a resident in their building tests positive, along with their infectious period and a link to post-exposure instructions from USC Student Health.</p>
+                    
+                    <h3>Masking</h3>
+                    <p>In a Jan. 5 communitywide email, the University announced that students are required to wear medical grade masks, including surgical, N95, KN95 and KF94 masks, and can no longer wear cloth masks unless they wear a surgical mask underneath. This requirement extends to common and public areas of University housing buildings.</p>
+                    
+                    <h3>Deadline to move in</h3>
+                    <p>Prior to the University’s announcement of online learning, the deadline for students to move into dorm-style housing upon their return from winter break was Jan. 10. The deadline is now Jan. 24, and will be moved according to the start date of in-person classes.</p>
+                    <p>“All spring Housing assignments will be active and held for students while university classes are being held remotely,” the Dec. 29 email read.</p>
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student positivity rate below 2% | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+                <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                        <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>Student positivity rate below 2%</h1>
+                    <h5>by bella durgin-johnson <span>2/15/22</span></h5>
+                    <img src="http://dailytrojan.com/wp-content/uploads/2022/02/CovidTestLine_090321_SarahCortina_U004-scaled.jpeg" style="width: 100%;">
+                    <figcaption><em>As positivity rates decrease, Van Orman said policies such as the “no-guest policy” in USC Housing could be lifted. (Sarah Cortina | Daily Trojan file photo)</em></figcaption>
+                    <p>USC and Los Angeles County will look to alter mask mandates as coronavirus rates continue to decrease in the University community, Chief Health Officer Dr. Sarah Van Orman said during a student media briefing Tuesday. As of Sunday, USC recorded a positivity rate of 1.94% for students and 0.9% for employees, a decrease from the 3.3% and 1.9% positivity rates the week prior for students and employees, respectively. 471 students and 15 employees tested positive for the coronavirus this week.</p>
+                    <p>Cases continue to drop in L.A. County with a new case average of 4,666 compared to 41,682 cases the month before. The mask mandate for outdoor mega-events will be dropped Wednesday, the department’s Public Health Director Barbara Ferrer said in a Board of Supervisors meeting Tuesday.</p>
+                    <p>“USC will follow the county guidance,” Van Orman said. “The County will continue to have the indoor masking requirement as long as cases remain elevated, but we are really heading in the right direction, both at USC as well as in the County.”</p>
+                    <p>The Pardee Marks coronavirus testing site at University Park Campus will close Wednesday in light of the Rams Super Bowl Celebration parade. The Jefferson Lot site will remain open and fully staffed. For routine care and non-urgent appointments, Van Orman encourages appointment rescheduling through TeleHealth.</p>
+                    <p>Students participating in the parade are encouraged to wear masks, especially for attendees in close proximity to others.</p>
+                    <p>USC Student Health has not seen any increases in coronavirus cases as a result of the Superbowl, Van Orman said. Although previous variants with longer incubation periods required around two weeks to determine an event’s coronavirus spread, the omicron variant’s effect on an event can be judged more quickly due to its quick transmission, Van Orman said. Student Health expects to see spreads related to the Superbowl by the end of this week.</p>
+                    <p>As cases continue to drop, Van Orman said the University will look to scale back coronavirus-related requirements and policies, including lifting USC Housing’s “no-guest policy,” and Trojan Check. Policies will likely change within the county and school in the next few weeks, Van Orman said.</p>
+                    <p>However, limited masking at large indoor events, such as at USC basketball games, may cause a delay in the timeline of coronavirus policy changes.</p>
+                    <p>“For folks to be patient and masking, particularly in an environment like a basketball game, can be effective,” Van Orman said. “Right now, numbers are declining, so we hope that things like [unmasked spectators] are not too big a setback, but compliance with the policies actually just makes it move faster, which is what we all want.”</p>
+                    <p>As of Tuesday, the indoor mask mandate changed in California, although L.A. County currently warrants indoor masking. Once the County drops the mask requirement, USC intends to follow.</p>
+                    <p>“The good news is that our mask mandate will go away when the County provides that direction,” Van Orman said. “It’s really going to be when the community prevalence falls, which we think will be within the next several weeks.”</p>
+                    
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

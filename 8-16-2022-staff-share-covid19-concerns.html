@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Staff share COVID-19 concerns | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+        <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            a {
+                color: #952836;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                        <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>Staff share COVID-19 concerns</h1>
+                    <h5>by emmett fuchs <span>8/16/21</span></h5>
+                    <img src="https://dailytrojan.com/wp-content/uploads/2020/01/bovard-1.jpg" style="width: 100%;">
+                    <figcaption><em>The University notified all student-facing staff that they would be required to return in-person five days a week beginning Aug. 16. (Daily Trojan file photo)
+</em></figcaption>
+                    <p>Nearly 600 USC faculty and staff signed a “United Statement of Grave Concerns” addressed to USC administration Aug. 4, criticizing the University for requiring all student-facing staff to return in-person five days a week beginning Aug. 16.</p>
+                    <p>According to the letter, departments and schools were initially told to make their own return plans; however, the University later decided everyone will be required to return to in-person work five days a week, regardless of the department or school’s initial plans.</p>
+                    <p>Faculty and staff who signed the letter cited concerns about the coronavirus, shorter commute times and the ability to work efficiently at home as reasons for staying home. The letter requested a response from USC administration within three business days. The following Monday, administrators emailed all faculty and staff reaffirming the new policies.</p>
+                    <p>Patrick Patterson, an assistant registrar at USC, said in an interview with the Daily Trojan that the change frustrated him and other staff members.</p>
+                    <p>“It was just this huge, huge kick in the gut,” Patterson said. “Now we’re being told, ‘Oh, nope, you have to go into work every day of the week,’ even though there’s increases in the Delta variant, the delta plus variant, the lambda variant. And the fact that we really have proven for this past year and a half that we can responsibly do our work in a flexible working environment.”</p>
+                    <p>A senior academic advisor, who wished to remain anonymous because of concerns about her job security, said that faculty and staff members’ “expectations of leadership … were not being met” and that the administrators presented a “lack of transparency, lack of empathetic leadership and lack of trust.” </p>
+                    <p>“It is clear that, even after asking for departments to make their return to work plans, that leadership does not trust its employees,” the advisor said.</p>
+                    <p>In a statement to the Daily Trojan, Provost and Senior Vice President for Academic Affairs Charles F. Zukoski and Senior Vice President of Human Resources Felicia A. Washington said that the University has taken steps to ensure that returning to campus will be safe.</p>
+                    <p>“If we follow safety protocols, and take care in our interactions with others, we will be safer on campus than we would be at the grocery store, in the gym, or at any indoor social gathering,” the statement said.</p>
+                    <p>Chief Health Officer Dr. Sarah Van Orman said in a student media briefing Thursday that, while the University is putting various measures in place to ensure a safe return, staff and faculty concerned about working in person should speak to their supervisors and schools.</p>
+                    <p>“Really what we’re focusing on is that this is a safe work environment,” Van Orman said. “There’s tons of mitigations in place … We have lots of things in place to make sure that we can protect [staff and faculty].”</p>
+                    <p>In addition to the letter, staff criticized the USC administration on Twitter, condemning the administration for ignoring its values.</p>
+                    <p>Patterson said his department demonstrated to USC administrators that remote work can increase efficiency.</p>
+                    <p>“We’ve proven that, in many cases, we can do quantifiably more work, as has been the case in academic records and registrar, in a more efficient manner, with fewer resources over the past year and a half, while working from home,” Patterson said.</p>
+                    <p>On Thursday, USC officials held a Zoom webinar to address faculty and staff concerns. The advisor said that the webinar was “what you could expect from leadership,” and “very aligned with the messages that have been shared with students, faculty and staff.”</p>
+                    <p>“[The USC administration] mandate [is] to be transparent in their processes [and] how they are making decisions, to bring in students, faculty and staff, as stakeholders in the decisions that they make as people who are impacted by those decisions,” they said. “How did they decide that it’s safe to return? What are the metrics?”</p>
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

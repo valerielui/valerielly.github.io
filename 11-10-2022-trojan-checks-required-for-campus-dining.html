@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trojan Checks required for campus dining | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+        <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #content {
+                width: 85%;
+                margin-left: 14%;
+                height: calc(100vh-46px);
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            a {
+                color: #952836;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                         <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>Trojan Checks required for campus dining</h1>
+                    <h5>by bella durgan-johnson <span>11/10/21</span></h5>
+                    <img src="http://dailytrojan.com/wp-content/uploads/2021/09/keck-simon-park.jpg" style="width: 100%;">
+                    <figcaption><em>Chief Health Officer Dr. Sarah Van Orman recommends that students carry digital copies of their vaccine cards following Los Angeles County’s mandate requiring proof of vaccine to be shown upon entering restaurants and other venues. (Simon Park | Daily Trojan file photo)</em></figcaption>
+                    <p>In compliance with the Los Angeles County mandate requiring proof of vaccination for indoor spaces, students will need to present their Trojan checks – which indicate a person’s vaccination status – at more USC locations.</p>
+                    <p>The mandate, in effect since Monday, requires proof of full coronavirus vaccination to enter indoor spaces including restaurants, shopping centers, movie theaters and coffee shops. Those unvaccinated because of a religious or medical exemption must show proof of a negative coronavirus test taken within 72 hours to enter.</p>
+                    <p>Trojan Check currently indicates students who are fully vaccinated or who have tested in the last 72 hours to access indoor dining, gyms and indoor events. For people using guest status Trojan Checks, the USC Care Crew will ask for proof of vaccination or a recent negative coronavirus test as well as photo identification.</p>
+                    <p>“If [the USC Care Crew] find out they are a student, they’re actually going to be turned away with that [guest pass],” said Chief Health Officer Dr. Sarah Van Orman in a student media briefing Tuesday.</p>
+                    <p>Van Orman also recommends students carry a digital copy of their vaccine card when going to restaurants and other venues because of the mandate’s enforcement.</p>
+                    <p>USC’s rates for flu vaccinations are steadily increasing with about 70% of faculty and 65% of students who are currently vaccinated, showing similar trends to campus vaccinations for the coronavirus.</p>
+                    <p>“Similar to the COVID vaccine, there was an initial deadline and then it takes a couple of weeks to get everybody to comply with it,” Van Orman said.</p>
+                    <p>The influenza shot takes about two weeks to be effective and the flu season’s start varies but usually begins around early to mid-December, Van Orman said. To combat the upcoming flu season, USC set Nov. 1 as an early vaccination deadline in hopes that students would be fully vaccinated by the time the flu hit.</p>
+                    <p>According to Van Orman, the USC community is also seeing an increase in positive coronavirus cases, with numbers doubling in the last two weeks. Rates were low through early October with an average of 20 cases a week. However, the University saw a rise of 63 cases with a positivity rate close to 0.2% this week. This is similar to the rates in L.A., which has seen positive cases double and an increase in hospitalizations, Van Orman said.</p>
+                    <p>Increasing rates are likely “multifactorial,” with people being together more, a change in the weather bringing people indoors and the rise and fall of coronavirus rates, which “appears to go in these two month waves,” Van Orman said.</p>
+                    <p>Van Orman continues to encourage students to get coronavirus booster shots. As recommended by the Centers for Disease Control and Prevention, those who received the Johnson & Johnson vaccine are encouraged to get a booster two months after their initial dose. For those who got Moderna or Pfizer, the CDC recommends a booster six months after their initial vaccination if they have underlying health conditions, work in an area that puts them at risk or live in crowded housing.</p>
+                    <p>Since the start of the fall semester, fully vaccinated faculty and staff are not required to test because they are less likely to spread coronavirus than students due to their living conditions, Van Orman said.</p>
+                    <p>“It really reflects the lower incidents that we see within faculty and staff,” Van Orman said. “They aren’t really living in this community and they aren’t spreading [coronavirus] in the same ways that we know that students were because of the way in which student populations mix and are in close quarters.”</p>
+                    <p>Although the Pac-12 postponed the USC football game against the University of California, Berkeley was postponed, Van Orman said she expects students to travel but hopes to get case rates down before Thanksgiving break to protect the community and students’ families.</p>
+                    <p>“I advise people who travel to … get tested 48 hours before you depart and also be alert to symptoms,” Van Orman said. “People naturally [think] ‘I don’t think it’s COVID, it’s OK,’ and then they test positive two days later, and they’ve been exposing people so just be vigilant for symptoms.”</p>
+                    
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

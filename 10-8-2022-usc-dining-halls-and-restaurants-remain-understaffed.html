@@ -1,0 +1,303 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>USC dining halls and restaurants remain understaffed | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+        <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+             a {
+                color: #952836;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                         <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>USC dining halls and restaurants remain understaffed</h1>
+                    <h5>by christina chkarboul, sasha ryu <span>10/8/21</span></h5>
+                    <img src="https://dailytrojan.com/wp-content/uploads/2021/10/ParksideDining_090321_SarahCortina_E003-scaled.jpg" style="width: 100%;">
+                    <figcaption><em>The USC Village Dining Hall serves over 2,000 students every day, and has only two dishwashers per shift, compared to the four they’d usually have before the pandemic. (Sarah Cortina | Daily Trojan)</em></figcaption>
+                    <p>After nearly two years away from campus as a result of the coronavirus pandemic, staffers at the three USC residential dining halls returned at the start of the 2021-2022 school year to serve thousands of students daily. Since the dining halls reopened, long lines, unexpected weekend closures and food shortages have taken place because of understaffing.</p>
+                    <p>Three employees from the USC Village Dining Hall spoke to the Daily Trojan about understaffing at the residential dining halls on the condition of anonymity because of concerns about job security.</p>
+                    <p>One staffer spoke about navigating the long hours he’s assigned to work.</p>
+                    <p>For nearly seven years, the staffer woke up before sunrise to drive across the city and clock in at the USC Village. Now, he can rely on their seniority to land the breakfast shift, which he says is preferable to the dinner shift, when more students come in to eat. But when the pandemic hit and campus closed, that all changed.</p>
+                    <p>After the first stay-at-home orders came into effect across Los Angeles County, the University negotiated with the dining staff’s union, Unite Here Local 11, to pay the employees’ salaries in full for the first six months of lockdown. After those six months passed, however, the anonymous staffer, who supports himself and helps out his parents and grandmother, had to search for a new source of income.</p>
+                    <p>According to the anonymous staffer and other co-workers, many people who worked in the dining halls before the pandemic didn’t return this fall. Some didn’t come back because they weren’t rehired by the University, they said. Others, staffers said, didn’t reapply.</p>
+                    <p>In an interview with the <em>Daily Trojan</em>, Miguel Jauregui, the director of Unite Here Local 11, said the union has been speaking to the University about the understaffing at the residential dining halls “for a while now,” but they “haven’t reached any clear resolutions.”</p>
+                    <p>“We’ve filed some complaints, but we don’t have any movement from [the University’s] part,” Jauregui said.</p>
+                    <p>According to Jauregui, the union wants USC to “call workers back” and “hire some more people.” Jauregui also said he hopes the student body will get involved with the issue and “voice their concerns” about the understaffing.</p>
+                    <p>According to Dirk De Jong, the assistant vice president of USC Hospitality and the USC Hotel, as of Oct. 5, 67 people work at the USC Village Dining Hall, 56 people work at EVK and 57 people work at the Parkside Restaurant & Grill dining hall. De Jong also reported that there are currently three open positions at the USC Village, 13 at EVK and 12 at Parkside.</p>
+                    <p>Before the coronavirus pandemic, there were 63 staffers at the Village, 64 staffers at EVK and 60 staffers at Parkside.</p>
+                    <p>USC Hospitality sent out a campuswide email Aug. 23 addressing limited hours and unexpected closures, in part, because of understaffing.</p>
+                    <p>“Due to unforeseen challenges, we were unable to have all Campus Dining venues open prior to the first day of classes, and we understand the frustration that this has caused,” the email read. “We sincerely apologize.”</p>
+                    <p>Another anonymous USC Village dining hall chef applied to work at USC because they wanted to learn about catering and try something new. They learned to cook from their grandmother and worked as a chef for six years before coming to USC at the start of the fall semester 2021. The chef, similarly to the other anonymous staffer, wakes up at 3:45 a.m. daily to work the morning shift. They said they like the early mornings: In their words, if you like being a chef, inconveniences like that “don’t matter.”</p>
+                    <p>But according to the chef, the number of employees in the dining hall currently is not enough to keep up with the necessary level of output.</p>
+                    <p>“Yeah, we’re understaffed here,” they said. “We need one more [worker].”</p>
+                    <p>The USC Village Dining Hall services upward of 2,000 students every day but currently has only two dishwashers per shift, another staffer said, half the amount typically assigned to a shift before the pandemic.</p>
+                    <p>The chef said there aren’t many people who apply online for the jobs offered at the dining hall and that it’s “really hard” to find people to employ.</p>
+                    <p>These worker shortages aren’t unique to the dining halls or to the University. Experts say millions more who lost their jobs at the beginning of the pandemic aren’t returning to work because they relocated to more affordable places to live.</p>
+                    <p>On Sept. 24, USC Hospitality hosted a hiring fair in search of filling up more of the open positions at the dining halls. USC Hospitality also plans to host another hiring fair Oct. 8.</p>
+                    <p>When contacted by the <em>Daily Trojan</em>, the University declined to comment on the understaffing at its dining halls.</p>
+                    <p><em>Correction: A previous version of this article misstated the name of the local union “Unite Here Local 11” as “USC Unite Here Local 11.” The Daily Trojan regrets this error.</em></p>
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

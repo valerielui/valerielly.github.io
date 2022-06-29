@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>USC delays in-person instruction by one week, requires booster shots | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+        <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            a {
+                color: #952836;
+            }
+            figcaption {
+                font-family: 'EB Garamond', serif;
+                font-size: 0.8rem;
+                margin-bottom: 1.2rem!important;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 1.4rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+                #mobile-nav h1 {
+                    font-weight: 800!important;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                         <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>USC delays in-person instruction by one week, requires booster shots</h1>
+                    <h5>by emmett fuchs, shaylee navarro <span>12/24/21</span></h5>
+                    <img src="http://dailytrojan.com/wp-content/uploads/2015/01/WEB_doheny_Mariya.jpg" style="width: 100%; ">
+                    <figcaption><em>The University announced it will require booster shots for eligible faculty, students and staff. (Mariya Dondonyan | Daily Trojan file photo)</em></figcaption>
+                    <p>USC will move the first week of spring semester classes online, Provost and Senior Vice President for Academic Affairs Charles Zukoski and Chief Health Officer Dr. Sarah Van Orman announced in a communitywide email Friday. In-person classes are slated to resume Jan. 18.</p>
+                    <p>The University will also require booster shots for eligible faculty, students and staff, according to the email. USC will issue a booster shot deadline by next week but currently urges community members to book their shot as soon as possible.</p>
+                    <p>The announcement follows the spread of the omicron variant across the United States and in Los Angeles County. L.A. County currently reports a daily average of 4,564 cases, a 181% increase in a two week period, according to the New York Times. Hospitalizations also increased by 31% compared to the previous two weeks, though rates remain lower than before vaccines were widely available.</p>
+                    <p>In a communitywide email Thursday, USC Student Health announced that current campus positivity rates are at 10%, an increase from the week of Dec. 12-18., when the student positivity rate was 1.6% and the employee positivity rate was 0.7%.</p>
+                    <p>Despite the remote start, residential housing will open on Jan. 6 as planned, according to the email. Before attending in-person classes and moving into University housing, students will be required to show proof of a negative coronavirus test. Surveillance testing will continue during the spring semester.</p>
+                    <p>The Bookstore, Jefferson Lot, Pardee Marks and Pappas Quad testing centers will be open on a modified schedule Jan. 3-7. and resume normal testing hours Jan. 10.</p>
+                    <p>USC will also delay the Spring New Student Convocation, initially scheduled on Jan. 7, by around two weeks. Other University events “will continue as planned” with compliance of guidelines issued by the L.A. County Department of Public Health.</p>
+                    <p>Work plans for faculty and staff upon return from the holiday break Jan. 3 will remain the same, with any changes announced by respective work supervisors. </p>
+                    <p>Other institutions, such as Harvard University and Stanford University, have also delayed in-person operations following a rise in cases of the omicron variant. <a href="https://www.thecrimson.com/article/2021/12/18/covid-remote-january/">Harvard</a>, which announced its plans Dec. 18, will conduct its campus operations remotely for the first three weeks of January, with in-person spring classes scheduled to begin Jan. 24. </p>
+                    <p>Stanford University announced on Dec. 16 that the first two weeks of classes of its winter quarter, starting Jan. 3, will be held online. In-person classes are expected to resume Jan. 18, according to the <a href="https://stanforddaily.com/2021/12/16/stanford-moves-first-two-weeks-of-winter-classes-online/">Stanford Daily.</a></p>
+                    <p>Seven University of California institutions, including its Los Angeles and Irvine campuses, will conduct classes virtually for the first two weeks of its winter quarter — scheduled to begin Jan. 3. Berkeley, which follows a semester system, currently plans to continue with in-person instruction on Jan. 18. Merced, which also operates on a semester system, has yet to announce its plans.</p>
+                    <p>Syracuse University pushed back the start of its semester by one week, starting classes with in-person instruction Jan. 24 and ending a week later, according to the <a href="https://dailyorange.com/2021/12/syracuse-university-delays-spring-semester/">Daily Orange</a>.</p>
+                    <p>USC will provide additional updates next week, according to the email.</p>
+                    <p>“We continue to closely monitor the spread of cases in our community, as well as the situation at other institutions,” the email read. “Fall was a success at USC, and we remain committed to keeping our campuses safe and continuing in-person instruction this spring.”</p>
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>

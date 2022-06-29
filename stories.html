@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stories | The New Normal</title>
+    <link rel="icon" href="Assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#952836">
+    <meta property="og:image" content="Assets/preview.jpg">
+    <style>
+        body {
+            margin: 0!important;
+            font-family: 'Libre Franklin', sans-serif;
+            overflow-x: hidden;
+            background-color: #f0f0f0;
+        }
+        #container {
+            width: 100%;
+        }
+        #header {
+            display: flex;
+            width: 100% - 46px;
+            margin: 23px;
+            justify-content: space-between;
+        }
+        #header #newnormal {
+            color: #ffdd97;
+            font-size: 1.5rem!important;
+            line-height: 30px;
+            font-weight: 900;
+        }
+        #header #dt-logo {
+            width: 138px;
+        }
+        a {
+            text-decoration: none;
+        }
+        #header .links {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-weight: 200;
+            text-transform: uppercase;
+            line-height: 30px;
+            font-size: 1rem;
+        }
+        #header .links a {
+            text-decoration: none;
+            color: #000000;
+        }
+        #header .links a:hover {
+            text-decoration: underline;
+        }
+        #stories-cont {
+            width: 380px;
+            height: 83vh;
+            background-color: white;
+            box-shadow: 10px 10px 10px rgb(190,190,190);
+            border-radius: 35px;
+            position:absolute;
+            top: 68%;
+            left: 50%;
+            right: 50%;
+            bottom: 50%;
+            transform: translate(-50%,-68%);
+            overflow: hidden;
+        }
+        #title {
+            width: 100%;
+            height: auto;
+            font-weight: 700;
+            color: black;
+            border-bottom: 1.5px solid #D0D7D9;
+            font-size: 10px;
+            line-height: 3rem!important;
+            padding-left: 25px!important;
+            padding-top: 10px!important;
+        }
+        #title h1 {
+            max-width: 70%!important;
+        }
+        #button {
+            background-color: #EEF0F2;
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        #line1, #line2 {
+            background-color: #59657C;
+            border-radius: 10000px;
+            width: 2px;
+            height: 20px;
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+        #line1 {
+            transform: rotate(45deg);
+        }
+        #line2 {
+            transform: rotate(-45deg);
+        }
+        .section {
+            background-color: #ffdd97;
+            border-radius: 20px;
+            width: 85%;
+            margin: 6% 7.5%;
+            height: auto;
+            z-index: 1;
+            position: relative;
+            text-decoration: none;
+            color: #000000;
+        }
+        .section:hover {
+            background-color: #ffcc64;
+        }
+        .section-cont {
+            padding-top: 6%;
+            height: 87%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+        .section-icon {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            top: -30px;
+            left: 10px;
+            border-radius: 15px;
+            background-color: rgb(90,90,90);
+        }
+        span {
+            display: flex;
+            justify-content: space-between;
+        }
+        .medium {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            margin-bottom: 5px!important;
+        }
+        .title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .descrip {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 5px!important;
+        }
+        .text {
+            margin: 0;
+        }
+        .text-cont {
+            margin: 18px 10px;
+        }
+        footer {
+            display: none;
+        }
+        #mobilenav {
+            display: none;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                height: 100vh;
+                overflow-y: hidden;
+            }
+            #container {
+                margin-top: 2rem!important;
+            }
+            #header {
+                margin-bottom: 0;
+                display: none;
+            }
+            #stories-cont {
+                width: 90%;
+                height: 80vh;
+                margin-top: 2vh;
+            }
+            .section {
+                height: auto;
+            }
+            .text-cont {
+                width: 90%;
+                margin: 7% 5%;
+            }
+            .text-cont .title {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+            }
+            footer {
+                margin-bottom: 50px;
+                display: block;
+                height: 800px;
+            }
+        }
+    </style>
+</head>
+<body id="storiespg">
+    <div id="container">
+            <div id="header">
+                <a href="/"><div id="newnormal">
+                    <div>the <br>new <br>normal.</div>
+                </div></a>
+                
+                <div><a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" id="dt-logo" alt="DT Logo"></a></div>
+                
+                <div class="nav">
+                    <div class="links">
+                        <a href="/about">about</a>
+                        <a href="/content">content</a>
+                        <a href="/contributors">contributors</a>
+                    </div>
+                </div>       
+            </div>
+        
+            <div id="mobile-nav">
+                <a href="/" id="newnormal"><div>the new normal.</div></a>
+                <div class="links">
+                    <a href="/about">about</a>
+                    <a href="/content">content</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+        
+            <div id="stories-cont">
+                <div id="title"><h1>Recent Notifications</h1></div>
+                <div id="button">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                </div>
+                
+                <div class="section-cont">
+                    <a href="/unmasking-the-usc-experience" class="section"><div>
+                        <div class="section-icon" style="background-color: #DCDCDC!important;">
+                            <img src="Assets/stories%20page/photo%20essay.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Photo Essay</h3>
+                                <h3 class="medium text">Dec 20, 2021</h3>
+                            </span>
+                            <h1 class="title text">Unmasking the USC Experience</h1>
+                            <p class="descrip text">As coronavirus continues to impact even the nuances of campus life, here are the perspectives <em>Daily Trojan</em> photographers captured of USC students and workers.</p>
+                        </div>
+                    </div></a>
+                
+                    
+                    <a href="/online-to-real-time" class="section"><div>
+                        <div class="section-icon" style="background-color: #DCDCDC!important;">
+                            <img src="Assets/stories%20page/photo%20essay.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Photo Essay</h3>
+                                <h3 class="medium text">Sep 1, 2021</h3>
+                            </span>
+                            <h1 class="title text">Online to Real Time</h1>
+                            <p class="descrip text">While the pandemic may not be over, students have rejoiced for the return of live sporting events.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/a-rough-welcome-home" class="section"><div>
+                        <div class="section-icon" style="background-color: #DCDCDC!important;">
+                            <img src="Assets/stories%20page/photo%20essay.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Photo Essay</h3>
+                                <h3 class="medium text">Fall 2021</h3>
+                            </span>
+                            <h1 class="title text">A Rough Welcome Home</h1>
+                            <p class="descrip text">Starting with their first step on campus, USC students have become accustomed to new learning and living constraints.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/5-7-2022-amid-elevated-coronavirus-case-numbers-student-health-issues-daily-counts" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">May 7, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">Amid elevated coronavirus case numbers, Student Health issues daily counts</h1>
+                            <p class="descrip text">Case numbers in the University community have been nearly doubling week after week.</p>
+                        </div>
+                    </div></a>
+
+                    <a href="/3-31-2022-trojan-check-no-longer-required-starting-monday" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Mar 31, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">Trojan Check no longer required starting Monday</h1>
+                            <p class="descrip text">The CARE Crew will no longer be staffing the University Park Campus perimeter, though the physical infrastructure will remain.</p>
+                        </div>
+                    </div></a>
+
+                    <a href="/3-22-2022-usc-s-coronavirus-response-a-look-back" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Mar 22, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">USC’s coronavirus response: A look back
+</h1>
+                            <p class="descrip text">Measures included changes to remote learning policies and tuition increases.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/2-18-2022-usc-to-lift-coronavirus-protocols" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Feb 18, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">USC to lift most coronavirus protocols</h1>
+                            <p class="descrip text">The removal of the surveillance testing requirement for fully vaccinated students is among the announced changes, effective March 1.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/2-15-2022-student-positivity-rate-below-2%" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Feb 15, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">Student positivity rate below 2%</h1>
+                            <p class="descrip text">The University will follow L.A. County mask guidance, Dr. Sarah Van Orman said.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/1-20-2022-students-recount-usc-sponsored-isolation-experiences" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Jan 20, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">Students recount USC-sponsored isolation experiences</h1>
+                            <p class="descrip text">Students isolating in the fall stayed at the USC Hotel and the DoubleTree by Hilton.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/1-19-2022-housing-rules-for-campus-return" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Jan 19, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">Housing rules for campus return</h1>
+                            <p class="descrip text">The reinstatement of the no-guest policy is among changes for the spring.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/1-4-2022-usc-to-require-n95-or-surgical-masks-for-spring-semester" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Jan 4, 2022</h3>
+                            </span>                            
+                            <h1 class="title text">USC to require surgical or N95 masks for spring semester</h1>
+                            <p class="descrip text">Van Orman said the University has no plans to extend online learning beyond the first week.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/12-24-2022-usc-delays-in-person-instruction-by-one-week-requires-booster-shots" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Dec 24, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">USC delays in-person instruction by one week, requires booster shots</h1>
+                            <p class="descrip text">Following a rise in omicron variant cases, the University will resume in-person classes Jan. 18.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/11-10-2022-trojan-checks-required-for-campus-dining" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Nov 10, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">Trojan Checks required for campus dining</h1>
+                            <p class="descrip text">Students will need proof of vaccination to enter indoor dining, gyms, and events.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/10-8-2022-usc-dining-halls-and-restaurants-remain-understaffed" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Oct 8, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">USC dining halls and restaurants remain understaffed</h1>
+                            <p class="descrip text">Long lines, food shortages and weekend closures inconvenienced students.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/9-10-2022-trojan-check-bypassed" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Sep 10, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">Trojan Check bypassed</h1>
+                            <p class="descrip text">Students have found ways to access campus without completing safety protocols.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/9-9-2022-housing-policies-challenge-students-resident-assistants" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Sep 9, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">Housing policies challenge students, resident assistants</h1>
+                            <p class="descrip text">Housing policies challenge students, resident assistants.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/9-1-2022-students-criticize-inconsistent-coronavirus-regulations" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Sep 1, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">Students criticize inconsistent coronavirus regulations</h1>
+                            <p class="descrip text">After over a year of online classes, students had mixed feelings about returning live.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/8-16-2022-staff-share-covid19-concerns" class="section"><div>
+                        <div class="section-icon" style="background-color: #E7FEFF!important;">
+                            <img src="Assets/stories%20page/article.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Article</h3>
+                                <h3 class="medium text">Aug 16, 2021</h3>
+                            </span>                            
+                            <h1 class="title text">Staff share COVID-19 concerns</h1>
+                            <p class="descrip text">Employees criticized USC for lack of transparency in return to campus.</p>
+                        </div>
+                    </div></a>
+                    
+                    <a href="/week-8-recap-dining-halls-understaffed-guest-policy-reversed" class="section"><div>
+                        <div class="section-icon" style="background-color: #F6931E!important">
+                            <img src="Assets/stories%20page/podcast.png" style="width: 100%;">
+                        </div>
+                        <div class="text-cont">
+                            <span>
+                                <h3 class="medium text">Podcast</h3>
+                                <h3 class="medium text">Nov 24, 2021</h3>
+                            </span>
+                            <h1 class="title text">Week 8 recap: On campus dining understaffed, guest policy reversed</h1>
+                            <p class="descrip text">This week’s podcast highlighted the recent coronavirus issues on campus.</p>
+                        </div>
+                    </div></a>
+                
+                </div>
+        </div>
+    </div>
+</body>
+    
+
+</html>

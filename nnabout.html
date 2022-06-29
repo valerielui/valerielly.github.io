@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0!important;
+            font-family: 'Libre Franklin', sans-serif;
+            overflow-x: hidden;
+            background-color: #952836;
+        }
+        #container {
+            width: 100%;
+        }
+        #header {
+            display: flex;
+            width: 100% - 46px;
+            margin: 23px;
+            justify-content: space-between;
+        }
+        #header #newnormal {
+            color: #ffdd97;
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 900;
+        }
+        #header #dt-logo {
+            width: 138px;
+        }
+        #header .links {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-weight: 200;
+            text-transform: uppercase;
+            line-height: 30px;
+        }
+        #header .links a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #header .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            position: relative;
+            z-index: 100;
+            background-color: #ffdd97;
+            width: 100%;
+            height: 175px!important;
+            margin: 0!important;
+            text-transform: uppercase;
+            padding: 50px 70px!important;
+        }
+        .footer-cont {
+            display: flex;
+            position: relative;
+        }
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            margin-right: 8%;
+        }
+        .footer-cont img {
+            height: 50%;
+            margin-right: 8%;
+            overflow-x: hidden;
+        }
+        .footer-cont a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .footer-cont a:hover {
+            text-decoration: underline;
+        }
+        #footer-credits {
+            margin-left: -80px;
+            position: absolute;
+            width: 100%;
+            bottom: 30px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        #content {
+            color: #ffffff;
+            width: 55%;
+            margin: 0 22.5% 8%;
+        }
+        #content h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+        #content p {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+        #mobilenav #dt-logo {
+            width: 138px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #mobilenav {
+            display: none!important;
+        }
+        #padding {
+            height: 5rem;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            body {
+                height: 100vh;
+            }
+            #header {
+                height: 12vh;
+            }
+            #content {
+                width: 80%;
+                margin: 5% 10%;
+            }
+            #content h1 {
+                margin-bottom: 0;
+            }
+            footer {
+                height: 500px!important;
+                padding: 0!important;
+                width: 100%;
+            }
+            .footer-cont {
+                flex-direction: column;
+                text-align: center;
+                padding: 0!important;
+            }
+            .footer-cont img {
+                width: 40%;
+                margin: auto;
+                margin-top: 25px;
+            }
+            .links {
+                line-height: 30px;
+                margin: 0;
+            }
+            footer .links:first-of-type {
+                margin-top: 30px;
+            }
+            #footer-credits {
+                width: 70%;
+                margin: 0 2%;
+                font-size: 12px;
+            }
+            #header {
+                display: none;
+            }
+            #mobilenav {
+                width: 90%;
+                text-align: center;
+                display: block!important;
+                margin: 2rem 5%!important;
+            }
+            #mobilenav #newnormal {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                margin-top: 0!important;
+                font-weight: 900;
+            }
+            #mobilenav a {
+                text-decoration: none!important;
+                text-transform: uppercase!important;
+                color: #ffffff;
+                font-weight: 200;
+            }
+            #mobilenav a:hover {
+                text-decoration: underline!important;
+            }
+            #mobilenav .links {
+                display: flex;
+                width: 100%;
+                justify-content: space-around!important;
+/*                background-color: blue;*/
+                font-size: 1rem;
+                line-height: 1.9rem;
+            }
+            #header #dt-logo {
+                display: none;
+                margin-bottom: 0!important;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <div id="header">
+                <div id="newnormal">
+                    <div>the <br>new <br>normal.</div>
+                </div>
+
+                
+                <div><a href="https://dailytrojan.com/"><img src="Assets/dt-logo-white.png" id="dt-logo" alt="DT Logo"></a></div>
+                
+                
+                <div class="nav">
+                    <div class="links">
+                        <a href="#">about</a>
+                        <a href="#">stories</a>
+                        <a href="#">contributors</a>
+                    </div>
+                </div>       
+            </div>
+        
+            <div id="mobilenav">
+                <div id="newnormal">the new normal.</div>
+                <div class="links">
+                    <a href="#">about</a>
+                    <a href="#">stories</a>
+                    <a href="#">contributors</a>
+                </div>
+            </div>
+        
+            <div id="content">
+                <h1>the new normal.</h1>
+                <p>Mandatory face masks and curfews, routine vaccinations and various social distancing measures.</p>
+                
+                <p>The coronavirus crisis is likely the first thing that came to mind; however, as tensions began to settle on the verge of World War I’s completion, these were the same health protocols enacted for the rise of the 1918 flu pandemic. As troops returned home, the U.S. experienced rapidly rising case numbers and a grueling set of lockdowns. Numerous safety measures were used over the two years and four waves to try and quell the spread.</p>
+                
+                <p>Now, more than a century later, USC students are facing a very similar world event. The coronavirus pandemic has drastically changed the structure of student life; from remote and hybrid learning on Zoom to weekly surveillance coronavirus tests and daily symptom screens through Trojan Check, the USC community has been forced to adapt to the new way to learn.</p>
+                
+                <p>Although USC has recently lessened coronavirus protocols by lifting Trojan Check for fully vaccinated and boosted students and the ban on guests in student housing, the future is still uncertain. While students no longer need to stand in long lines at testing centers, can attend classes in person and maskless and begin to enjoy campus life, USC students are continuing to experience the ebbs and flows of the new normal.</p>
+            </div>
+                        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="#">about</a>
+                    <a href="#">stories</a>
+                    <a href="#">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+    
+
+</html>

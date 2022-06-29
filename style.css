@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header {
+            display: flex;
+            width: 100% - 46px;
+            margin: 23px;
+            justify-content: space-between;
+        }
+        #header #newnormal {
+            color: #ffdd97;
+            font-size: 1.5rem;
+            line-height: 30px;
+            font-weight: 900;
+        }
+        #header #dt-logo {
+            width: 138px;
+        }
+        #header .links {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-weight: 200;
+            text-transform: uppercase;
+            line-height: 30px;
+        }
+        #header .links a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #header .links a:hover {
+            text-decoration: underline;
+        }
+  
+
+#mobile-nav {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+            #mobile-nav, #mobile-nav #newnormal {
+                display: block!important;
+            }
+            #mobile-nav {
+                position: relative;
+                margin-top: 0;
+                text-align: center;
+                display: block!important;
+                margin: 2rem 5%;
+            }
+            #mobile-nav #newnormal {
+                color: #ffdd97;
+                margin-top: 0!important;
+                font-weight: 900;
+                font-size: 1.5rem!important;
+                line-height: 2rem!important;
+            }
+            #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+            }
+            #mobile-nav a {
+                text-decoration: none!important;
+                color: #000000;
+                font-weight: 200;
+            }
+            #mobile-nav .links a:hover {
+                text-decoration: underline!important;
+            }
+            #mobile-nav {
+                width: 90%;
+            }
+            #mobile-nav .links {
+                display: flex;
+                width: 100%;
+                justify-content: space-around!important;
+                font-size: 1rem!important;
+                line-height: 1.9rem!important;
+                text-transform: uppercase!important;
+            }
+            #content #dt-logo {
+                display: none!important;
+                }
+}

@@ -1,0 +1,354 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A Rough Welcome Home | The New Normal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/icon.png">
+        <link rel="stylesheet" href="content.css">
+        <meta name="theme-color" content="#952836">
+        <meta property="og:image" content="Assets/preview.jpg">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #newnormal, #mobile-nn {
+                color: #ffdd97;
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-weight: 900;
+                margin-top: 0!important;
+            }
+            #links {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            #links a {
+                text-decoration: none;
+                color: #000000;
+                line-height: 30px;
+            }
+            #links a:hover {
+                text-decoration: underline;
+            }
+            #content-cont {
+                width: 70%;
+                margin: 0 15%;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
+            }
+            #content-cont #dt-logo {
+                width: 138px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                margin-top: 42px;
+                font-weight: 900;
+                font-size: 3rem;
+                margin-bottom: 42px;
+            }
+            footer {
+                position: relative;
+                z-index: 100;
+                background-color: #ffdd97;
+                width: 100%;
+                height: 175px!important;
+                margin: 0!important;
+                text-transform: uppercase;
+                padding: 50px 70px!important;
+                border-top: 23px solid #ffffff;
+            }
+            .footer-cont {
+                display: flex;
+                position: relative;
+            }
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8%;
+            }
+            .footer-cont img {
+                height: 50%;
+                margin-right: 8%;
+                overflow-x: hidden;
+            }
+            .footer-cont a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .footer-cont a:hover {
+                text-decoration: underline;
+            }
+            #footer-credits {
+                margin-left: -80px;
+                position: absolute;
+                width: 100%;
+                bottom: 30px;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 0.8rem;
+            }
+            #content-cont h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 0;
+            }
+            h5 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                line-height: 15px;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            #mobile-nav {
+                display: none;
+            }
+            #padding {
+                height: 5rem;
+            }
+            .row {
+                display: flex;
+                width: 100%;
+                margin-bottom: 2%;
+            }
+            .row img {
+                width: 49%;
+            }
+            .row img:first-of-type {
+                margin-right: 2%;
+            }
+            .col1 {
+                width: 48.5%;
+                margin-right: 2%;
+            }
+            .col2 {
+                width: 53%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .col1 img, .col2 img {
+                width: 100%;
+            }
+            #newnormal, #sidebar a {
+                text-decoration: none;
+            }
+           
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    width: 100%;
+                    height: 100vh;
+                }
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #sidebar {
+                    display: none;
+                }
+                #content {
+                    width: 100%;
+                    margin: 1.4rem 0;
+                }
+                #content-cont {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .title {
+                    text-align: center;
+                }
+                footer {
+                    height: 500px!important;
+                    padding: 0!important;
+                    width: 100%;
+                }
+                .footer-cont {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0!important;
+                }
+                .footer-cont img {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                .links {
+                    line-height: 30px;
+                    margin: 0;
+                }
+                .links:first-of-type {
+                    margin-top: 30px;
+                }
+                #footer-credits {
+                    width: 70%;
+                    margin: 0 2%;
+                    font-size: 12px;
+                }
+                #mobile-nav {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                #mobile-nav h1 {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                #mobile-nav #links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 0;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+/*                    background-color: blue;*/
+                }
+                #mobile-nav #newnormal {
+                    line-height: 2rem!important;
+                    font-size: 1.5rem!important;
+/*                    background-color: aqua;*/
+                }
+                #content #dt-logo {
+                    display: none;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <a href="/"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
+                <div id="links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content-cont">
+                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    
+                    <div id="mobile-nav">
+                         <a href="/" id="newnormal"><h1>the new normal.</h1></a>
+                        <div id="links">
+                            <a href="/about">about</a>
+                            <a href="/stories">stories</a>
+                            <a href="/contributors">contributors</a>
+                        </div>       
+                    </div>
+                    
+                    <h1>A Rough Welcome Home</h1>
+                    <h5>9/01/2021</h5>
+                    <p>Since students returned to campus in August, they had to adapt to the new state of a recovering University. From weekly coronavirus tests to learning how to navigate the University Park Campus, students in this <em>Daily Trojan</em> photo essay have experienced the issues of USC’s new normal.</p>
+<!--
+                    <div class="row">
+                        <img src="Assets/PhotoEssay1.png">
+                        <img src="Assets/PhotoEssay2.png">
+                    </div>
+-->
+                    <img src="assets/photoessay1/VillageDinningHallLine-082921-AmandaChou_U--2.jpg" style="width: 100%;">
+                    
+                    <div class="row" style="margin-top: 2%;">
+                        <div class="col1">
+                            <img src="assets/photoessay1/newnormal_ericyeich2.jpg" style="width: 100%;">
+                        </div>
+                        <div class="col2">
+                            <img src="assets/photoessay1/newnormal_ericyeich.jpg">
+                            <img src="assets/photoessay1/campusreturn_090621_vincentleo_2.jpg" style="margin-top: 2%;">
+                        </div>
+
+                    </div>
+                    
+                    <img src="assets/photoessay1/StockPhotos_090421_TalhaRafique_E04.jpg" style="width: 100%;">
+
+<!--
+                    <div class="row" style="width: 100%; display: flex; height: 40%; margin-top: 2%; justify-content: space-between;">
+                        <img src="Assets/photoessay1/campusreturn2_092321_vincentleo_e-1-3%202.jpg" style="height: 100%; width: auto;">
+                        <img src="Assets/photoessay1/campusreturn_090621_vincentleo_3.jpg" style="height: 100%; width: auto;">
+                        <img src="assets/photoessay1/campusreturn2_092321_vincentleo_e-1%20copy.jpg" style="height: 100%; width: auto;">
+                    </div>
+-->
+                    
+                    <div class="row" style="margin-top:2%;">
+                        <div class="col2">
+                            <img src="assets/photoessay1/campusreturn_090621_vincentleo_1.jpg" style="width: 100%; height: auto; margin-bottom: 2%;">
+                            <img src="assets/photoessay1/VillageGymLine_082921_SarahCortina_U003.jpg" style="width: 100%; height: auto;">
+                        </div>
+                        <img class="col1" src="assets/photoessay1/campusreturn_090621_vincentleo_4.jpg" style="margin: 0; width: 46%; margin-left: 2%;">
+                    </div>
+                    
+                    <img src="assets/photoessay1/campusreturn_090621_vincentleo_6.jpg" style="width: 100%;">
+                    
+                    <div class="row" style="margin-top: 2%;">
+                        <img src="assets/photoessay1/DulceLine_090321_AmandaChou_007.jpg">
+                        <img src="assets/photoessay1/campusreturn2_092321_vincentleo_e-1-4.jpg">
+                    </div>
+                    
+                    <div class="row" style="margin-top: 2%;">
+                        <img src="assets/photoessay1/campusreturn2_092321_vincentleo_e-1-3%202.jpg">
+                        <img src="assets/photoessay1/newnormal_110821_vincentleo_e-1.jpg">
+                    </div>
+                    
+                    <div class="row" style="justify-content: space-between;">
+                        <img src="assets/photoessay1/campusreturn_090621_vincentleo_3.jpg" style="width: 32%; margin-right:0;">
+                        <img src="assets/photoessay1/campusreturn2_092321_vincentleo_e-1%20copy.jpg" style="width: 32%;">
+                        <img src="assets/photoessay1/DulceLines_090321_AndrewKerner_U004.JPG" style="width: 32%;">
+                    </div>
+                    
+                    <p>Photos by: Amanda Chou, Sarah Cortina, Andrew Kerner, Vincent Leo, Talha Rafique & Eric Yeich</p>
+                    
+                    
+                </div>
+                
+                
+            </div>
+                </div>    
+        
+        <div id="padding"></div>
+        
+        <footer>
+            <div class="footer-cont">
+                <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
+                <div class="footer-col links">
+                    <a href="/about">about</a>
+                    <a href="/stories">stories</a>
+                    <a href="/contributors">contributors</a>
+                </div>
+        
+                <div class="footer-col links">
+                    <a href="https://dailytrojan.com/">website</a>
+                    <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
+                </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
+            </div>
+            
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
+    </footer>
+    </body>
+</html>
