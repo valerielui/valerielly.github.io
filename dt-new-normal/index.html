@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The New Normal</title>
+    <link rel="icon" href="Assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#952836">
+    <meta property="og:image" content="Assets/preview.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        div {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        video {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @media only screen and (max-width: 600px) {
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>    
+</head>
+    
+<body>
+    <a href="/stories">
+        <div>
+            <video autoplay muted loop>
+                <source src="Assets/new_normal_intro_updated2.mp4" type="video/mp4">
+            </video>
+    </div>
+    </a>
+</body>
