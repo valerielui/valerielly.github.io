@@ -84,6 +84,7 @@ body {
     display: flex;
     margin: 10%;
     position: relative;
+    display: none;
 }
 #left {
     display: flex;
@@ -104,13 +105,6 @@ figcaption {
 #popup img {
     width: 40%;
     height: auto;
-/*
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translateY(-50%);
-*/
 }
 #popup-text {
     text-align: center;
