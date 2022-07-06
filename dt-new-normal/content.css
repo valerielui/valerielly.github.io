@@ -75,8 +75,11 @@ display: flex;
 width: 100%;
 }
 
-.article-row,.pe-row {
+.article-row {
 overflow-x: scroll;
+}
+.pe-row {
+    overflow-x: hidden;
 }
 .article-row .content-page-box {
 width: 100%;
@@ -189,7 +192,6 @@ color: black;
         line-height: 1.5rem;
     }
     .content-page-row {
-    /*                    margin-left: 0;*/
         height: auto;
         width: auto!important;
     }
@@ -197,6 +199,7 @@ color: black;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 0;
+        overflow-x: scroll;
     }
     .article-row .content-page-box, .pe-row .content-page-box {
         margin: 0 5%;

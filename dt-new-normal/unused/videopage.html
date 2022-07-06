@@ -1,15 +1,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>USC to lift most coronavirus protocols | The New Normal</title>
+        <title>Video Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Libre+Franklin:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="icon" href="Assets/icon.png">
-                <link rel="stylesheet" href="content.css">
-        <meta name="theme-color" content="#952836">
-        <meta property="og:image" content="Assets/preview.jpg">
-        <meta property="og:title" content="USC to lift most coronavirus protocols | The New Normal">
         <style>
             body {
                 margin: 0;
@@ -18,6 +13,16 @@
                 width: 100vw;
                 overflow-x: hidden;
                 font-family: 'Libre Franklin', sans-serif;
+            }
+            #container {
+                width: 100%;
+            }
+            #sidebar {
+                width: 12%;
+                height: calc(100vh - 46px);
+                margin: 0 23px;
+                border-right: 1px solid #bfbfbf;
+                position: fixed;
             }
             #content {
                 width: 85%;
@@ -49,17 +54,17 @@
             }
             #content-cont {
                 width: 70%;
-                margin: 0 15%;
-            }
-            #content-cont p {
-                font-family: 'EB Garamond', serif;
-                font-size: 1rem;
+                margin: 23px 15%;
             }
             #content-cont #dt-logo {
                 width: 138px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+            }
+            #content-cont p {
+                font-family: 'EB Garamond', serif;
+                font-size: 1rem;
             }
             .title {
                 margin-top: 42px;
@@ -128,13 +133,7 @@
                 display: none;
             }
             #padding {
-                height: 5rem;
-            }
-            a {
-                color: #952836;
-            }
-            #newnormal, #sidebar a {
-                text-decoration: none;
+                height: 2rem;
             }
            
             
@@ -151,12 +150,12 @@
                     display: none;
                 }
                 #content {
-                    width: 100%;
-                    margin: 2rem 0;
+                    width: 90%;
+                    margin: 2rem 5%!important;
                 }
                 #content-cont {
-                    width: 90%;
-                    margin: 0 5%;
+                    width: 100%;
+                    margin: 0;
                 }
                 .title {
                     text-align: center;
@@ -195,21 +194,17 @@
                 }
                 #mobile-nav h1 {
                     margin-bottom: 0;
-                    font-size: 25px;
-                    line-height: 25px;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+/*                    background-color: aqua;*/
                 }
                 #mobile-nav #links {
                     flex-direction: row;
                     justify-content: space-around;
                     margin-top: 0;
-                    line-height: 1.5rem;
                     font-size: 1rem;
+                    line-height: 1.5rem;
 /*                    background-color: blue;*/
-                }
-                #mobile-nav #newnormal {
-                    line-height: 2rem!important;
-                    font-size: 1.5rem!important;
-/*                    background-color: aqua;*/
                 }
                 #content #dt-logo {
                     display: none;
@@ -221,61 +216,58 @@
     <body>
         <div id="container">
             <div id="sidebar">
-                <a href="/dt-new-normal"><h1 id="newnormal">the <br>new <br>normal.</h1></a>
+                <h1 id="newnormal">the <br>new <br>normal.</h1>
                 <div id="line" style="background-color: #bfbfbf; height: 1px; width: 85%; margin: 0 2.5%;"></div>
                 <div id="links">
-                    <a href="/dt-new-normal/about">about</a>
-                    <a href="/dt-new-normal/stories">stories</a>
-                    <a href="/dt-new-normal/contributors">contributors</a>
+                    <a href="#">about</a>
+                    <a href="#">stories</a>
+                    <a href="#">contributors</a>
                 </div>
             </div>
             <div id="content">
                 <div id="content-cont">
-                    <a href="dailytrojan.com"><img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo"></a>
+                    <img src="Assets/DT%20logo.png" id="dt-logo" alt="Daily Trojan logo">
                     
                     <div id="mobile-nav">
-                        <a href="/dt-new-normal" id="newnormal"><h1>the new normal.</h1></a>
+                         <h1 id="newnormal">the new normal.</h1>
                         <div id="links">
-                            <a href="/dt-new-normal/about">about</a>
-                            <a href="/dt-new-normal/stories">stories</a>
-                            <a href="/dt-new-normal/contributors">contributors</a>
+                            <a href="#">about</a>
+                            <a href="#">stories</a>
+                            <a href="#">contributors</a>
                         </div>       
                     </div>
                     
-                    <h1>USC to lift most coronavirus protocols</h1>
-                    <h5>by jonathan park <span>2/18/22</span></h5>
-                    <p>USC will no longer require weekly surveillance testing for fully vaccinated and boosted students starting March 1, Chief Health Officer Dr. Sarah Van Orman announced in a communitywide email Friday.</p>
-                    <p>“Students who are up to date on their vaccinations (fully vaccinated; and have received a booster if currently eligible) are no longer required to test weekly,” the email read. “Testing requirements for unvaccinated with approved exemption (every 72 hours) and individuals not up to date on vaccinations (every 4 days) remain in effect.”</p>
-                    <p>Outdoor masking is no longer required effective Feb. 16. Effective March 1, the University will allow guests who are current USC students in residence halls — reversing the “no-guest” policy reinstated Dec. 29. The University will also no longer require reservations to access USC gyms.</p>
-                    <p>The announcement comes after the <a href="https://dailytrojan.com/2022/02/15/student-positivity-rate-below-2/">student positivity rate dropped to 1.31% last week</a>, down from a 14.79% peak reported for the week of Jan. 2. The positivity rate for employees fell to 0.87% from a 13.33% high reported for the week of Dec. 26.</p>
-                    <p>A <a href="https://issuu.com/uscforms/docs/covid_transitionmarch1">March 1 transition guide</a> attached to Friday’s email provided additional details on masking and testing requirements.</p>
-                    <p>The University will continue its indoor masking requirement and Trojan Check enforcement, and testing remains available for symptomatic individuals and individuals who have had an exposure to a positive person. Vaccines and booster doses remain “available to the campus community” at clinics around the University Park and Health Sciences campuses, according to the transition guide.</p>
-                    <p>“We appreciate the efforts of our students, faculty, and staff who have collectively created a protected environment with adherence to the vaccination, booster, and testing requirements,” Van Orman wrote. “At this point in the pandemic, we are looking at the future with plans to modify protocols that remove mitigation levels as public health orders are revised to lift restrictions.”</p>
-                    <p>USC Student Health <a href="https://issuu.com/uscforms/docs/1_million_a_two_year_journey_of_covid_19">administered its 1 millionth coronavirus test</a> Monday prior to the announced policy changes.</p>
+                    <h1>Video title here</h1>
+                    <img src="assets/Photo5.png" style="width: 100%; margin-bottom: 1rem; margin-top: 1rem;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <div id="padding"></div>
                 </div>
                 
                 
             </div>
                 </div>    
         
-        <div id="padding"></div>
-        
         <footer>
             <div class="footer-cont">
                 <a href="https://dailytrojan.com/"><img src="Assets/DT%20logo.png" class="footer-col"></a>
                 <div class="footer-col links">
-                    <a href="/dt-new-normal/about">about</a>
-                    <a href="/dt-new-normal/stories">stories</a>
-                    <a href="/dt-new-normal/contributors">contributors</a>
+                    <a href="#">about</a>
+                    <a href="#">stories</a>
+                    <a href="#">contributors</a>
                 </div>
         
                 <div class="footer-col links">
                     <a href="https://dailytrojan.com/">website</a>
                     <a href="https://www.instagram.com/dailytrojan/?hl=en">instagram</a>
                 </div>
+
+                <div class="footer-col links">
+                    <a href="#">credits</a>
+                </div>
             </div>
             
-            <div id="footer-credits">© University of Southern California | Daily Trojan 2022. All rights reserved.</div>
+            <div id="footer-credits">© University of Southern California | Daily Trojan 2021. All rights reserved.</div>
     </footer>
     </body>
 </html>
