@@ -18,7 +18,7 @@
 <body>
     <div id="backbtn">
         <div id="navbox"><h4>Return to<br><span style="color: #ffdd97;">the new normal.</span></h4></div>    
-        <a href="/dt-new-normal"><div id="back"><img src="assets/icon.png"></div></a>
+        <a href="/dt-new-normal"><div id="back"><img src="Assets/icon.png"></div></a>
 
     </div>
     
@@ -134,7 +134,11 @@
         <div id="anchor"></div>
         <div id="line" class="line"></div>
         <div id="popup">
-            <div id="left"><img id="popup-img" src="Assets/compressed/1.jpg"><figcaption>Photo by <span id="photog">photog</span></figcaption></div>
+            <div id="left">
+                <img id="popup-img" src="Assets/compressed/1.jpg">
+                <figcaption>Photo by <span id="photog">photog</span></figcaption>
+            </div>
+            
             <div id="popup-text">
                 <div>
                     <h3 id="q">question</h3>
@@ -246,7 +250,7 @@
             <p><b>Vincent Leo</b> | Spring 2022 Online Editor, Fall 2021 Digital Managing Editor</p>
             <p><b>Valerie Lui</b> | Spring 2022 Online Projects Editor</p>
             <p><b>Kellie Chen & Simon Park</b> | Fall 2021 Photo Editors</p>
-            <p style="margin-top: 2rem; font-size: 0.8rem;">© University of Southern California | Daily Trojan 2022. <br>All rights reserved.</p>
+            <p style="margin-top: 2rem; font-size: 0.8rem;">© University of Southern California | Daily Trojan 2022. All rights reserved.</p>
         </footer>
     
     </div>
@@ -293,21 +297,31 @@
                 
                 var width = $(window).width();
 
+                //for mobile sizes
                 if (width < 600) {
+                    // horizontals on PHONES
                     if ($(this).hasClass('hor') == true) {
-                        $(updatedPopImg).attr('style','width: 90%; margin: 0 5%!important');
-                    } else {
-                        $(updatedPopImg).attr('style','width: 75%; margin: 0 12.5%!important');
+                        $('#left').attr('style','width: 100%; margin: 0!important;');
+                        $(updatedPopImg).attr('style','width: 100%; margin: 0!important;');
+                    } // verticals on PHONES
+                    else {
+                        $('#left').attr('style','width: 80%; margin: 0 10%!important;');
+                        $(updatedPopImg).attr('style','width: 75%; margin: 0 12.5%');
                     }
-                } else {
+                } // for laptop sizes
+                else {
+                    // laptop horizontals
                     if ($(this).hasClass('hor') == true) {
-                        $(updatedPopImg).attr('style','width: 50%; margin: 0;');
+                        $('#left').attr('style','width: 50%; margin: 0!important;');
+                        $(updatedPopImg).attr('style','width: 100%; margin: 0!important;');
                         $('#popup').css('width','90%');
                         $('#popup').css('margin','10% 5%');
                         $('#popup-text').css('width','45%');
                         $('#popup-text').css('left','77%');
-                    } else {
-                        $(updatedPopImg).attr('style','width: 40%;');
+                    } // laptop verticals
+                    else {
+                        $('#left').attr('style','width: 40%; margin: 0!important;');
+                        $(updatedPopImg).attr('style','width: 100%; margin: 0!important;');
                         $('#popup').css('width','80%');
                         $('#popup').css('margin','10%');
                         $('#popup-text').css('width','53%');
