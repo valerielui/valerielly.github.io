@@ -120,10 +120,11 @@ flex-direction: column;
 margin-right: 8%;
 }
 .footer-cont img {
-height: 50%;
-margin-right: 8%;
-overflow-x: hidden;
-}
+            width: 100%;
+            height: auto!important;
+            margin-right: 8%;
+            overflow-x: hidden;
+        }
 .footer-cont a {
 text-decoration: none;
 color: #000000;
