@@ -54,6 +54,7 @@
                 font-weight: 900;
                 font-size: 1.5rem!important;
                 line-height: 2rem!important;
+                margin-bottom: .5rem!important;
             }
             #mobile-nav h1 {
                     margin-bottom: 0;
@@ -78,6 +79,7 @@
                 font-size: 1rem!important;
                 line-height: 1.9rem!important;
                 text-transform: uppercase!important;
+                margin-top: 0.5rem;
             }
             #content #dt-logo {
                 display: none!important;
