@@ -35,6 +35,9 @@ line-height: 30px;
 font-weight: 900;
 margin-top: 0!important;
 }
+#newnormal {
+    margin-bottom: 15px!important;
+}
 #links {
 display: flex;
 flex-direction: column;
@@ -152,8 +155,7 @@ a {
 text-decoration: none;
 color: black;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     #container {
         display: flex;
         flex-direction: column;
