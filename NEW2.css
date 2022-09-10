@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inconsolata', monospace;
+}
+h4,p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+h1 {
+    font-weight: 700;
+}
+#nav a, footer a {
+    text-decoration: none;
+    color: #000000;
+}
+#nav a:hover, footer a:hover {
+    font-weight: 900;
+/*    text-transform: uppercase;*/
+}
+#header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#header h1 {
+    text-transform: uppercase;
+}
+.cont {
+    padding: 5rem;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inconsolata', monospace;
+}
+#box {
+    width: 60%;
+    margin: 8vh 20%;
+    height: auto;
+}
+.divider {
+    text-align: center;
+}
+.dividersp {
+    display: inline-block;
+}
+#nav {
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 25%;
+/*    display: flex;*/
+}
+#test {
+    display: none;
+}
+#nav2 {
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+    text-transform: uppercase;
+}
+.col1 {
+    width: 10%;
+}
+.col1 p {
+    font-size: .9rem;
+}
+.col2 {
+    width: 90%;
+}
+.category {
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.scroll {
+    padding: 1rem 0;
+    display: none;
+    width: 100%;
+    overflow-x: scroll!important;
+}
+.scrollcont {
+    display: flex;
+    width: auto;
+}
+.projcont {
+    width: 450px;
+    margin-right: 5%;
+    text-decoration: none;
+    color: black
+}
+.projcont:last-of-type {
+    margin: 0;
+}
+.imgcont {
+    height: 300px;
+    width: 450px;
+    background-color: white;
+}
+#des, #frontend, #data {
+    cursor: pointer;
+}
+#des:hover, #frontend:hover, #data:hover {
+/*    text-transform: uppercase;*/
+    font-weight: 900;
+}
+.descrip {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+#switch {
+    display: flex;
+    position: absolute;
+    height: 2rem;
+    right: 3%;
+    top: 3%;
+    justify-content: center;
+}
+#mboxdiv {
+    margin-right: 10px;
+    height: 100%;
+    display: none;
+}
+#mboxdiv p {
+    background-color: #ded6cc;
+    width: auto;
+    line-height: 1rem;
+    padding: 10px;
+}
+#dark, #light {
+    position: absolute;
+
+}
+.modes {
+    color: #ded6cc;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.modes:hover {
+    opacity: 0.7;
+}
+
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #box {
+        width: 90%;
+        margin: 5%;
+    }
+    .cont {
+        width: 90%;
+        padding: 10% 5%;
+    }
+}
