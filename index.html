@@ -1,215 +1,68 @@
-<!doctype html>
 <html>
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPWW083PS"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-3PPWW083PS');
-        </script>
-        <link rel="stylesheet" type="text/css" href="website.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/zdy2eiu.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-        <link rel="icon" href="pictures/icon/spakospako.png">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/pyi3esy.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
-        <title>Valerie Lui</title>
-        <meta name="keywords" content="Valerie Lui, Valerie, Valerie Lui USC, USC, University of Southern California, USC Marshall, Marshall School of Business, USC MOVE, Marshall Outreach Volunteers and Entrepreneurs, Upright, Upright Oats, Daily Trojan">
-        <meta name="description" content="Valerie Lui is a current senior @ USC stuyding Business + Applied Analytics. Passionate about driving innovation and impact.">
-        <meta name="theme-color" content="#EAE6E4">
-        <meta property="og:site_name" content="Valerie Lui">
-        <meta property="og:title" content="Valerie Lui">
-        <meta property="og:description" content="Valerie Lui is a current senior @ USC stuyding Business + Applied Analytics. Passionate about driving innovation and impact.">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="pictures/preview/cover2.png">
-        <meta property="og:url" content="https://www.valerielui.com/">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="NEW2.css">
+        
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'inconsolata', monospace;
+                background-color: #1a1918;
+                color: #ded6cc;
+                position: relative;
+                height: 100vh;
+                width: 100vw;
+                overflow: hidden;
+            }
+            div {
+                width: 40%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            a {
+                color: #ded6cc;
+            }
+            img {
+                height: 280px;
+                width: 210px;
+                display: none;
+                position: absolute;
+                left: 60%;
+                top: 100%;
+            }
+            a:hover span img {
+                display:inline-block;
+                z-index: 1;
+            }
+            @media only screen and (max-width: 600px) {
+                div {
+                    width: 70%;
+                }
+                img {
+                    height: 240px;
+                    width: 180px;
+                    left: 50%;
+                    top: -180%;
+                }
+        </style>
     </head>
-    
-    <body>
-        <nav class="navbar">
-            <a href="/" class="nav-left">valerie lui</a>
-
-            <ul class="nav-right" id="nav-right">
-                <li><a class="navlink" id="navlinkwork" href="index.html">work</a></li>
-                <li><a class="navlink" id="navlinkabout" href="/about">about</a></li>
-                <div id="nav-icons">
-                    <li><a href="mailto:vlui@usc.edu"><i class="far fa-envelope navlink"></i></a></li>
-                    <li><a href="https://linkedin.com/in/valerie-lui"><i class="fab fa-linkedin-in navlink"></i></a></li>
-                </div>
-
-            </ul>
-
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        
-        <script src="app.js"></script>
-        
-        <section class="homepage">
-            <div class="hero">
-            <img id="desktop-rib" src="pictures/ribbons/lightergraydesk.png">
-            <img id="mobile-rib" src="pictures/ribbons/mob-rib.png">
-            <div class="hero-content">
-                <h1 class="home-title">Hi, I'm Valerie!</h1>
-                <h3 class="home-sub">A Business student at USC passionate about driving innovation and impact.</h3>
-            </div>
-        </div>
-        
-        <div class="featured-cont">
-            <div class="row">
-                <a href="https://www.notion.so/Upright-Internship-81a329f1d6b343538e6e80f965469cc9" target="_blank" class="work">
-                <div class="featured-flex">
-                    <div class="f-column1">
-                        <p class="featured-num">01</p>
-                    </div>
-                    <div class="f-column2">
-                        <div class="work-img">
-                            <img src="pictures/logo2.jpg" alt="Upright instant powdered oatmilk cover">
-                        </div>
-                    
-                        <div class="featured-text">
-                            <p class="work-category">Marketing, Graphic Design, Internship</p>
-                            <h1 class="work-title">Upright Internship</h1>
-                            <h3 class="work-subtitle">Utilize design and marketing to introduce Upright and its instant oatmilk to the world!</h3>
-                        </div>
-                    </div>
-                </div></a>
-                
-                
-                <a href="https://www.notion.so/Develop-For-Good-Donation-Flow-Revamp-c7218f6ecd6246c69016dbca0c7882ba" target="_blank" id="trial" class="work">
-                <div class="featured-flex" id="featured-p2">
-                    <div class="f-column1">
-                        <p class="featured-num">02</p>
-                    </div>
-                    <div class="f-column2">
-                        <div class="work-img">
-                            <img src="pictures/dfgv3.jpg" alt="develop for good logo cover">
-                        </div>
-                    
-                        <div class="featured-text">
-                            <p class="work-category">UI/UX Design</p>
-                            <h1 class="work-title">Develop For Good: Technology Donation Flow Revamp</h1>
-                            <h3 class="work-subtitle">Volunteered design skills to help minimize the technology gap.</h3>
-                        </div>
-                    </div>
-                </div></a>
-                
-                
-            </div>
-            
-            <div class="row">
-                
-<!--
-                <a href="/tfhk" id="trial" class="work">
-                <div class="featured-flex">
-                    <div class="f-column1">
-                        <p class="featured-num">01</p>
-                    </div>
-                    <div class="f-column2">
-                        <div class="work-img">
-                            <img src="pictures/tfhk/logo.png" alt="teach for hong kong logo">
-                        </div>
-                    
-                        <div class="featured-text">
-                            <p class="work-category">Web Design, Graphic Design, Internship</p>
-                            <h1 class="work-title">Teach For Hong Kong Internship</h1>
-                            <h3 class="work-subtitle">A reflection on my internship at Teach For Hong Kong.</h3>
-                        </div>
-                    </div>
-                </div></a>
--->
-                
-                <a href="/ox-stickers" class="work">
-                <div class="featured-flex">
-                    <div class="f-column1">
-                        <p class="featured-num">03</p>
-                    </div>
-                    <div class="f-column2">
-                        <div class="work-img">
-                            <img src="pictures/ox/cover.png" alt="year of the ox sticker pack cover">
-                        </div>
-                    
-                        <div class="featured-text">
-                            <p class="work-category">Illustration</p>
-                            <h1 class="work-title">Year of the Ox Stickers</h1>
-                            <h3 class="work-subtitle">Festive Whatsapp stickers to celebrate the Year of the Ox.</h3>
-                        </div>
-                    </div>
-                </div></a>
-                
-                <a href="/survey-form" class="work">
-                <div class="featured-flex" id="featured-p2">
-                    <div class="f-column1">
-                        <p class="featured-num">04</p>
-                    </div>
-                    <div class="f-column2">
-                        <div class="work-img">
-                            <img src="pictures/survey/cover.png" alt="cover pic of quarantine survey form">
-                        </div>
-                    
-                        <div class="featured-text">
-                            <p class="work-category">Web Development</p>
-                            <h1 class="work-title">Quarantine Cravings Survey Form</h1>
-                            <h3 class="work-subtitle">A survey form created over quarantine asking about cravings for food and eating out. </h3>
-                        </div>
-                    </div> 
-                </div></a>
-                
-            </div>
-            
-            <div class="row" style="margin-bottom: 0!important;">
-                
-                <a href="/dt-thermostat" class="work">
-                <div class="featured-flex">
-                    <div class="f-column1">
-                        <p class="featured-num">05</p>
-                    </div>
-                    <div class="f-column2">
-                        <div class="work-img">
-                            <img src="pictures/thermostat/tinkercad1.JPG">
-                        </div>
-                    
-                        <div class="featured-text">
-                            <p class="work-category">Product Design, 3D Printing</p>
-                            <h1 class="work-title">Design Technology Thermostat Project</h1>
-                            <h3 class="work-subtitle">
-                            My first exposure to a thermostat and first experiences in coding, soldering, and 3D printing.</h3>
-                        </div>
-                    </div>
-                    </div></a>
-            </div>
-
-            </div>
-        </section>
-        
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-icons">
-                        <h1 class="home-title">Let's connect!</h1>
-                    
-                        <div class="icons">
-                            <p><a href="mailto:vlui@usc.edu">Email</a></p>
-                            <p>/</p> 
-                            <p><a href="https://www.linkedin.com/in/valerie-lui/" target="_blank">LinkedIn</a></p>
-                        </div>
-                </div>
-                    
-                <div class="developed"><p>Designed + developed by Valerie Lui ☻</p></div>
-            </div>
-        </footer>
-    
-    </body>
-    
-    
 </html>
+
+<body>
+<div>
+<h1>hello : )</h1>
+<p>my website is currently under construction. check back soon!</p><br>
+<p>in the meantime, here are some <a href="#"><span>pretty tulips<img src="IMG_1017.jpg"></span></a> i saw at <a href="https://keukenhof.nl/en/" target="_blank">keukenhof</a> (amsterdam) over the summer</p>
+</div>
+</body>
